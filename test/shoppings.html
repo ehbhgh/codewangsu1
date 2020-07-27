@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping</title>
+    <link rel="stylesheet" href="../css/shoppings.css">
+    <script src="../js/jquery-1.8.2.js"></script>
+    <script src="../js/list.js"></script>
+    <script src="../js/shoppings.js"></script>
+    <link rel="stylesheet" href="../css/font-awesome.css">
+</head>
+
+<body>
+     <!-- 第一行导航栏 -->
+     <div class="topNav">
+        <!-- 中间划分区域，居中 -->
+        <div class="topNavcenter">
+            <!-- 13个div存放每一个a标签内的span和em标签 -->
+            <div class="fa fa-home"><a href="../index.html"><span>返回首页</span></a></div>
+            <div class="webnav">
+                <a href="">
+                    <span>网页导航</span>
+                </a>
+                <!-- 隐藏块 -->
+                <div class="extendList1">
+                    <!-- 头 -->
+                    <div class="border">
+                        <div><span>特色购物</span></div>
+                        <ul>
+                            <li><a href=""><span>苏宁互联</span></a></li>
+                            <li><a href=""><span>苏宁卡</span></a></li>
+                            <li><a href=""><span>易回收</span></a></li>
+                            <li><a href=""><span>领券中心</span></a></li>
+                            <li><a href=""><span>导购指南</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="shangjia">
+                <a href="">
+                    <span>商家入驻</span>
+                </a>
+                 <!-- 隐藏块 -->
+                 <div class="extendList1">
+                    <!-- 头 -->
+                    <div class="border">
+                        
+                        <ul>
+                            <li><a href=""><span>合作招商</span></a></li>
+                            <li><a href=""><span>金融中心</span></a></li>
+                            <li><a href=""><span>易通天下</span></a></li>
+                            <li><a href=""><span>服务市场</span></a></li>
+                            <li><a href=""><span>规则中心</span></a></li>
+                            <li><a href=""><span>培训中心</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fuwu"><a href="help.html"><span>客户服务</span></a></div>
+            <div class="login"><a href="login.html"><span>请登录</span></a></div>
+            <div class="register"><a href="register.html"><span>注册有礼</span></a></div>
+            <div class="order">
+                <a href="shopping.html">
+                    <span>我的订单</span>
+                </a>
+                <!-- 隐藏块 -->
+                <div class="extendList1">
+                    <!-- 头 -->
+                    <div class="border">
+                        
+                        <ul>
+                            <li><a href=""><span>待支付</span></a></li>
+                            <li><a href=""><span>待收货</span></a></li>
+                            <li><a href=""><span>待评价</span></a></li>
+                            <li><a href=""><span>修改订单</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="yigou">
+                <a href="">
+                    <span>我的易购</span>
+                </a>
+                <!-- 隐藏块 -->
+                <div class="extendList1">
+                    <!-- 头 -->
+                    <div class="border">
+                        
+                        <ul class="ul1">
+                            <li><a href=""><span><img width="40" height="40" src="../images/lion.ico" alt=""></span></a></li>
+                            <li><a href=""><span>我的消息</span></a></li>
+                            <li><a href=""><span>我的金融</span></a></li>
+                            <li><a href=""><span>我的任性付</span></a></li>
+                            
+                        </ul>
+                        <ul class="ul2">
+                            <li><a href="login.html"><span>请登录</span></a></li>
+                            <li class="gap"><a href=""><span>我的关注</span></a></li>
+                            <li><a href=""><span>苏宁会员</span></a></li>
+                            <li><a href=""><span>我的优惠券</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="vip"><a href=""><span>苏宁会员</span></a></div>
+            <div class="fa fa-shopping-cart"><a href="shoppings.html"><span>购物车</span></a></div>
+            <div class="yifubao"><a href=""><span>易付宝</span></a></div>
+            <div class="qiyebuy"><a href=""><span>企业采购</span></a></div>
+            <div class="phonesuning"><a href=""><span>手机苏宁</span></a></div>
+        </div>
+    </div>
+    <div id="mainshop">
+        <a href="../index.html"><img src="../images/suning.png" alt=""></a>
+        <div id="h_input">
+            <label for="text"><span>🔍</span></label>
+            <input type="text" placeholder="输入已收藏商品" id="text">
+            <input type="button" value="搜索" id="btn">
+        </div>
+        <div id="contain">
+            <ul id="ul1">
+                <li><input type="checkbox" name="" id="btnSum" class="btnSum"><span>全选</span></li>
+                <li><span>商品信息</span></li>
+                <li><span>规格</span></li>
+                <li><span>单价(元)</span></li>
+                <li><span>数量</span></li>
+                <li><span>小计(元)</span></li>
+                <li><span>操作</span></li>
+            </ul>
+            <!-- 购物商品开始 -->
+            <ul id="ul2" class="ulli">
+                <li><input type="checkbox" name="" id="" class="btn1"></li>
+                <li>
+                    <div id="showIphone">
+                        <img src="../images/s1.jpg" alt="">
+                        <a href="list.html">荣耀20 4800万超广角AI四摄 3200W
+                            美颜自拍 麒麟980全网通版8GB+
+                            128GB 幻影蓝 移动联通电信4G</a>
+                        <img src="../images/s1.jpg" alt="" id="hideShow">
+                    </div>
+                </li>
+                <li><span>¥</span><strong name="price">2699</strong><span>.00</span></li>
+                <li>
+                    <div id="chanGe">
+                        <input type="button" value="-"> 
+                        <input type="text" value="1" name="count">
+                        <input type="button" value="+">
+                    </div>
+                </li>
+                <li><span>¥</span><strong>2699</strong><span>.00</span></li>
+                <li>
+                    <div id="fenZhuang">
+                        <span>移入关注</span><br />
+                        <span class="delet">删除</span>
+                    </div>
+                </li>
+            </ul>
+            <!-- 第二个商品 -->
+            <ul id="ul3" class="ulli">
+                <li><input type="checkbox" name="" id="" class="btn1"></li>
+                <li>
+                    <div id="showIphone">
+                        <img src="../images/s2.jpg" alt="">
+                        <a href="list.html">Apple iPhone XR 128GB 移动联通
+                            电信4G全网通手机 双卡双待</a>
+                        <img src="../images/s2.jpg" alt="" id="hideShow">
+                    </div>
+                </li>
+                <li><span>¥</span><strong name="price">5588</strong><span>.00</span></li>
+                <li>
+                    <div id="chanGe">
+                        <input type="button" value="-">
+                        <input type="text" value="1" name="count">
+                        <input type="button" value="+">
+                    </div>
+                </li>
+                <li><span>¥</span><strong>5588</strong><span>.00</span></li>
+                <li>
+                    <div id="fenZhuang">
+                        <span>移入关注</span><br />
+                        <span class="delet">删除</span>
+                    </div>
+                </li>
+            </ul>
+
+            <ul id="ul4" class="ulli">
+                <li><input type="checkbox" name="" id="" class="btn1"></li>
+                <li>
+                    <div id="showIphone">
+                        <img src="../images/s3.jpg" alt="">
+                        <a href="list.html">华为/HUWEI P30 亮黑色 8GB+128
+                            GB 莱卡 三摄 未来影像 移动联通电
+                            信4G全面屏全网通</a>
+                        <img src="../images/s3.jpg" alt="" id="hideShow">
+                    </div>
+                </li>
+                <li><span>¥</span><strong name="price">4278</strong><span>.00</span></li>
+                <li>
+                    <div id="chanGe">
+                        <input type="button" value="-">
+                        <input type="text" value="1" name="count">
+                        <input type="button" value="+" id="jiahao">
+                    </div>
+                </li>
+                <li><span>¥</span><strong>4278</strong><span>.00</span></li>
+                <li>
+                    <div id="fenZhuang">
+                        <span>移入关注</span><br />
+                        <span class="delet">删除</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="toSumPrice">
+            <ul>
+                <li><input type="checkbox" name="" id="btnSum2" class="btnSum"><span>全选</span></li>
+                <li><span class="delet">删除选中商品</span></li>
+                <li>
+                    <span>总价：</span>
+                    <span>¥</span>
+                    <span id="EndsumPrice"></span>
+                </li>
+                <li id="buyuPhone">
+                    <span id="toBuy">去结算</span>
+                </li>
+            </ul>
+        </div>
+        <div id="theLast">
+            <span id="buybuy"></span>
+            <span>X</span>
+            <span>支付成功，请静待发货哦！</span>
+        </div>
+        <div class="shadow">   
+        </div>
+    </div>
+    <div class="superday-foot">
+
+        <div class="foot-box">
+            <p class="foot-list">
+                <a href="#">苏宁互联</a>
+                <span>|</span>
+                <a href="#">苏宁金融</a>
+                <span>|</span>
+                <a href="#">苏宁支付</a>
+                <span>|</span>
+                <a href="#">PP视频</a>
+                <span>|</span>
+                <a href="#">红孩子</a>
+                <span>|</span>
+                <a href="#">苏宁物流</a>
+                <span>|</span>
+                <a href="#">手机苏宁</a>
+                <span>|</span>
+                <a href="#">零售云</a>
+                <span>|</span>
+                <a href="#">知识产权举报</a>
+                <span>|</span>
+                <a href="#">投资者关系</a>
+                <span>|</span>
+                <a href="#">苏宁智能</a>
+            </p>
+            <p class="foot-list">
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">诚聘英才</a>
+                <span>|</span>
+                <a href="#">合作招商</a>
+                <span>|</span>
+                <a href="#">广告平台</a>
+                <span>|</span>
+                <a href="#">苏宁联盟</a>
+                <span>|</span>
+                <a href="#">苏宁招标</a>
+                <span>|</span>
+                <a href="#">隐私政策</a>
+                <span>|</span>
+                <a href="#">用户体验提升计划</a>
+                <span>|</span>
+                <a href="#">股东会员认证</a>
+            </p>
+            <p class="foot-list2">
+                Copyright© 2002-2020，苏宁易购集团股份有限公司版权所有
+            </p>
+            <p class="foot-list2">
+                苏ICP备10207551号-4
+            </p>
+            <p class="foot-list2">
+                Copyright© 2002-2020，苏宁易购集团股份有限公司版权所有
+            </p>
+            <p class="foot-list2">
+                合字B2-20180025
+                <span>|</span>
+                <a href="#">出版物经营许可证新出发苏批字第A-243号</a>
+            </p>
+            <div class="img">
+                <img class="foot-list" src="../images/chengxin.png" alt="">
+                <img class="foot-list" src="../images/dianxin.jpg" alt="">
+                <img class="foot-zhizhao" src="../images/dianzizhizhao.png" alt="">
+                <img class="foot-list" src="../images/unicom.png" alt="">
+                <img class="foot-list" src="../images/wxrz.png" alt="">
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

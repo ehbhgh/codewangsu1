@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+</head>
+
+
+
+<body>
+
+
+
+    <!-- 页头 -->
+    <div class="login-head">
+        <a href="../index.html"><img src="../images/苏宁logo.png"
+                alt=""></a>
+        <span class="notice">依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号绑定验证！<a target="_blank"
+                href="https://hc.suning.com/privacy/index.htm?channelId=158196366771484382">《隐私政策》</a>已上线，将更有利于保护您的个人隐私。</span>
+        <div class="rightBottom">
+            <span class="fa fa-pencil-square-o"></span>&nbsp;
+            <span><a target="_blank" href="http://ued.suning.com/survey/express/d29va1Nr">我想对“登录”提意见</a></span>
+        </div>
+    </div>
+
+    <!-- 主体（登录）部分 -->
+    <div class="login-body">
+        <div class="img">
+            <a target="_blank"
+                href="https://www.suning.com/?utm_source=baidu&utm_medium=brand&utm_campaign=title&utm_term=brand">
+                <img src="../images/登录logo.png" alt=""></a>
+
+            <div class="login-main">
+                <div class="main-head">
+                    <div class="codeLogin">扫码登录</div>
+                    <span>|</span>
+                    <div class="userLogin">账户登录</div>
+                </div>
+                <!-- 二维码登录 -->
+                <div class="qrCode">
+                    <img src="../images/二维码.png" alt="">
+                </div>
+                <div class="text">
+                    <p><span>打开<span class="color"><a
+                                    href="http://sale.suning.com/syb/20120419xsjkhd/index.html?safp=d488778a.8tLoX.oKx8J.20&safpn=10009">苏宁易购APP</a></span>扫码登录</span>
+                    </p>
+                    <p><span class="color"><a href="register.html">注册 有惊喜></a></span></p>
+                </div>
+
+                <!-- 账户登录 -->
+                <div class="userDv">
+                    <div class="num">
+                        <span class="fa fa-user"></span>
+                        <input type="text" name="" id="num" placeholder="手机">
+                    </div>
+
+
+
+                    <div class="password">
+                        <span class="fa fa-lock"></span>
+                        <input type="password" name="" id="passwords" placeholder="请输入6-18位密码">
+                    </div>
+
+
+                    <!-- 短信验证码登录以及忘记密码 -->
+                    <div class="anotherWays">
+                        <span class="fa fa-mobile"></span>
+                        <span>&nbsp;<a
+                                href="https://passport.suning.com/ids/login?service=https%3A%2F%2Freg.suning.com%2Fauth%3FtargetUrl%3Dhttp%253A%252F%252Fwww.suning.com&method=GET&loginTheme=b2c">短信验证码登录</a></span>
+
+                        <div><a href="https://aq.suning.com/asc/forgetpsw.do">忘记密码？</a></div>
+                    </div>
+
+                    <div class="over">
+                        登录
+                    </div>
+
+                </div>
+
+
+                <!-- 使用以下账号登录 -->
+                <div class="loginType">
+                    <span>使用以下账号登录</span>
+                </div>
+
+                <!-- 登录方式图标 -->
+                <div class="pic">
+                    <a class="one" target="_blank"
+                        href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101224012&redirect_uri=https%3A%2F%2Fpassport.suning.com%2Fids%2Flogin%3Foauth_provider%3DQQProvider&state=https%3A%2F%2Floginst.suning.com%2F%2Fauth%3FtargetUrl%3Dhttps%253A%252F%252Fwww.suning.com%252F%253Fsafp%253Dd488778a.uzD.0.acf325284e%2526safpn%253D10009">
+                        <img src="../images/qq.png" alt="">
+                        <span>QQ</span>
+
+                    </a>
+                    <span>|</span>
+                    <a class="two" target="_blank"
+                        href="https://open.weixin.qq.com/connect/qrconnect?appid=wx2c91fc0834ac221c&redirect_uri=https%3A%2F%2Fpassport.suning.com%2Fids%2Flogin%3Foauth_provider%3DWeixinProvider&response_type=code&scope=snsapi_login&state=https%3A%2F%2Floginst.suning.com%2F%2Fauth%3FtargetUrl%3Dhttps%253A%252F%252Fwww.suning.com%252F%253Fsafp%253Dd488778a.uzD.0.acf325284e%2526safpn%253D10009">
+                        <img src="../images/wechat.png" alt="">
+                        <span>微信</span>
+
+                    </a>
+                    <span>|</span>
+                    <a class="three" target="_blank"
+                        href="https://paypassport.suning.com/ids/login?oauth_redirect=http%3A%2F%2Fpaypassport.suning.com%2Fids%2Foauth20%2FcallbackAuthorize%3FsnapshotId%3D0%252Asid_BDFE8AF5628973A90BBF9C78F33A56C8&loginTheme=defaultTheme">
+                        <img src="../images/yifubao.png" alt="">
+                        <span>易付宝</span>
+
+                    </a>
+                    <span>|</span>
+                    <a class="four" target="_blank"
+                        href="https://api.weibo.com/oauth2/authorize?client_id=4120269038&response_type=code&redirect_uri=https%3A%2F%2Fpassport.suning.com%2Fids%2Flogin%3Foauth_provider%3DSinaWeiBoProvider%26loginTheme%3Db2c%26agentType%3Dpc&state=https%3A%2F%2Floginst.suning.com%2F%2Fauth%3FtargetUrl%3Dhttps%253A%252F%252Fwww.suning.com%252F%253Fsafp%253Dd488778a.uzD.0.acf325284e%2526safpn%253D10009">
+                        <img src="../images/sina.png" alt="">
+                        <span>微博</span>
+
+                    </a>
+                    <span>|</span>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- 页脚 -->
+    <div class="login-foot">
+
+        <div class="foot-box">
+            <p class="foot-list">
+                <a href="#">苏宁互联</a>
+                <span>|</span>
+                <a href="#">苏宁金融</a>
+                <span>|</span>
+                <a href="#">苏宁支付</a>
+                <span>|</span>
+                <a href="#">PP视频</a>
+                <span>|</span>
+                <a href="#">红孩子</a>
+                <span>|</span>
+                <a href="#">苏宁物流</a>
+                <span>|</span>
+                <a href="#">手机苏宁</a>
+                <span>|</span>
+                <a href="#">零售云</a>
+                <span>|</span>
+                <a href="#">知识产权举报</a>
+                <span>|</span>
+                <a href="#">投资者关系</a>
+                <span>|</span>
+                <a href="#">苏宁智能</a>
+            </p>
+            <p class="foot-list">
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">诚聘英才</a>
+                <span>|</span>
+                <a href="#">合作招商</a>
+                <span>|</span>
+                <a href="#">广告平台</a>
+                <span>|</span>
+                <a href="#">苏宁联盟</a>
+                <span>|</span>
+                <a href="#">苏宁招标</a>
+                <span>|</span>
+                <a href="#">隐私政策</a>
+                <span>|</span>
+                <a href="#">用户体验提升计划</a>
+                <span>|</span>
+                <a href="#">股东会员认证</a>
+            </p>
+            <p class="foot-list2">
+                Copyright© 2002-2020，苏宁易购集团股份有限公司版权所有
+            </p>
+            <p class="foot-list2">
+                苏ICP备10207551号-4
+            </p>
+            <p class="foot-list2">
+                Copyright© 2002-2020，苏宁易购集团股份有限公司版权所有
+            </p>
+            <p class="foot-list2">
+                合字B2-20180025
+                <span>|</span>
+                <a href="#">出版物经营许可证新出发苏批字第A-243号</a>
+            </p>
+            <div class="img">
+                <img class="foot-list" src="../images/chengxin.png" alt="">
+                <img class="foot-list" src="../images/dianxin.jpg" alt="">
+                <img class="foot-zhizhao" src="../images/dianzizhizhao.png" alt="">
+                <img class="foot-list" src="../images/unicom.png" alt="">
+                <img class="foot-list" src="../images/wxrz.png" alt="">
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>

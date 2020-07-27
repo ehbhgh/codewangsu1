@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表页</title>
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/list.js"></script>
+</head>
+
+<body>
+    <!-- 第一行导航栏 -->
+    <div class="topNav">
+        <!-- 中间划分区域，居中 -->
+        <div class="topNavcenter">
+            <!-- 13个div存放每一个a标签内的span和em标签 -->
+            <div class="fa fa-home"><a href="../index.html"><span>返回首页</span></a></div>
+            <div class="webnav">
+                <a href="">
+                    <span>网页导航</span>
+                </a>
+                <!-- 隐藏块 -->
+                <div class="extendList1">
+                    <!-- 头 -->
+                    <div class="border">
+                        <div><span>特色购物</span></div>
+                        <ul>
+                            <li><a href=""><span>苏宁互联</span></a></li>
+                            <li><a href=""><span>苏宁卡</span></a></li>
+                            <li><a href=""><span>易回收</span></a></li>
+                            <li><a href=""><span>领券中心</span></a></li>
+                            <li><a href=""><span>导购指南</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="shangjia">
+                <a href="">
+                    <span>商家入驻</span>
+                </a>
+                 <!-- 隐藏块 -->
+                 <div class="extendList1">
+                    <!-- 头 -->
+                    <div class="border">
+                        
+                        <ul>
+                            <li><a href=""><span>合作招商</span></a></li>
+                            <li><a href=""><span>金融中心</span></a></li>
+                            <li><a href=""><span>易通天下</span></a></li>
+                            <li><a href=""><span>服务市场</span></a></li>
+                            <li><a href=""><span>规则中心</span></a></li>
+                            <li><a href=""><span>培训中心</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fuwu"><a href="help.html"><span>客户服务</span></a></div>
+            <div class="login"><a href="login.html"><span>请登录</span></a></div>
+            <div class="register"><a href="register.html"><span>注册有礼</span></a></div>
+            <div class="order">
+                <a href="shopping.html">
+                    <span>我的订单</span>
+                </a>
+                <!-- 隐藏块 -->
+                <div class="extendList1">
+                    <!-- 头 -->
+                    <div class="border">
+                        
+                        <ul>
+                            <li><a href=""><span>待支付</span></a></li>
+                            <li><a href=""><span>待收货</span></a></li>
+                            <li><a href=""><span>待评价</span></a></li>
+                            <li><a href=""><span>修改订单</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="yigou">
+                <a href="">
+                    <span>我的易购</span>
+                </a>
+                <!-- 隐藏块 -->
+                <div class="extendList1">
+                    <!-- 头 -->
+                    <div class="border">
+                        
+                        <ul class="ul1">
+                            <li><a href=""><span><img width="40" height="40" src="../images/lion.ico" alt=""></span></a></li>
+                            <li><a href=""><span>我的消息</span></a></li>
+                            <li><a href=""><span>我的金融</span></a></li>
+                            <li><a href=""><span>我的任性付</span></a></li>
+                            
+                        </ul>
+                        <ul class="ul2">
+                            <li><a href="login.html"><span>请登录</span></a></li>
+                            <li class="gap"><a href=""><span>我的关注</span></a></li>
+                            <li><a href=""><span>苏宁会员</span></a></li>
+                            <li><a href=""><span>我的优惠券</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="vip"><a href=""><span>苏宁会员</span></a></div>
+            <div class="fa fa-shopping-cart"><a href="shoppings.html"><span>购物车</span></a></div>
+            <div class="yifubao"><a href=""><span>易付宝</span></a></div>
+            <div class="qiyebuy"><a href=""><span>企业采购</span></a></div>
+            <div class="phonesuning"><a href=""><span>手机苏宁</span></a></div>
+        </div>
+    </div>
+    <div id="main">
+
+        <!-- 中间页面布局 -->
+        <div id="center">
+            <!-- 第一块div -->
+            <div id="header">
+                <a href="../index.html"><img src="../images/suning.png" alt=""></a>
+                <div id="headright">
+                    <div id="h_input">
+                        <label for="text"><span>🔍</span></label>
+                        <input type="text" placeholder="输入关键字搜索商品/品牌/店铺" id="text">
+                        <input type="button" value="搜索" id="btn">
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">iphonx</a>
+                            <span>&nbsp;|&nbsp;</span>
+                        </li>
+                        <li>
+                            <a href="">华为nova5 pro</a>
+                            <span>&nbsp;|&nbsp;</span>
+                        </li>
+                        <li>
+                            <a href="">real me X</a>
+                            <span>&nbsp;|&nbsp;</span>
+                        </li>
+                        <li>
+                            <a href="">OPPO Reno</a>
+                            <span>&nbsp;|&nbsp;</span>
+                        </li>
+                        <li>
+                            <a href="">三星 A70</a>
+                            <span>&nbsp;|&nbsp;</span>
+                        </li>
+                        <li>
+                            <a href="">红米 note7 prov</a>
+                            <span>&nbsp;|&nbsp;</span>
+                        </li>
+                        <li>
+                            <a href="">vivo IQOO</a>
+                            <span>&nbsp;|&nbsp;</span>
+                        </li>
+                        <li>
+                            <a href="">华为 P30</a>
+                            <span>&nbsp;|&nbsp;</span>
+                        </li>
+                        <li>
+                            <a href="">小米手机</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 第二块div -->
+            <div id="hList">
+                <div id="hListleft">
+                    <span class="fa fa-list"></span>
+                    <span>全部商品分类</span>
+                </div>
+                <ul>
+                    <li><a href="">限时抢购</a></li>
+                    <li><a href="">红孩子</a></li>
+                    <li><a href="">苏宁超市</a></li>
+                    <li><a href="">电器城</a></li>
+                    <li><a href="">生活家电</a></li>
+                    <li><a href="">时尚服饰</a></li>
+                    <li><a href="">苏宁国际</a></li>
+                    <li><a href="">苏宁Outlets</a></li>
+                    <li><a href="">苏宁金融</a></li>
+                </ul>
+            </div>
+            <!-- 第三块div -->
+            <div id="listIndex">
+                <span><a href="">全部结果</a></span>
+                <span>> 手机</span>
+            </div>
+            <!-- 第四块div -->
+            <div id="brandList">
+                <div id="bLindex"><span>品牌</span></div>
+                <ul>
+                    <li>
+                        <img src="../images/b1.jpg" alt="">
+                        <span>Apple</span>
+                    </li>
+                    <li>
+                        <img src="../images/b2.jpg" alt="">
+                        <span>华为</span>
+                    </li>
+                    <li>
+                        <img src="../images/b3.jpg" alt="">
+                        <span>小米</span>
+                    </li>
+                    <li>
+                        <img src="../images/b4.jpg" alt="">
+                        <span>honer</span>
+                    </li>
+                    <li>
+                        <img src="../images/b5.jpg" alt="">
+                        <span>vivo</span>
+                    </li>
+                    <li>
+                        <img src="../images/b6.jpg" alt="">
+                        <span>OPPO</span>
+                    </li>
+                    <li>
+                        <img src="../images/b7.jpg" alt="">
+                        <span>三星</span>
+                    </li>
+                    <li>
+                        <img src="../images/b8.jpg" alt="">
+                        <span>realme</span>
+                    </li>
+                    <li>
+                        <img src="../images/b9.jpg" alt="">
+                        <span>魅族</span>
+                    </li>
+                    <li>
+                        <img src="../images/b10.jpg" alt="">
+                        <span>诺基亚</span>
+                    </li>
+                    <li>
+                        <img src="../images/b11.jpg" alt="">
+                        <span>努比亚</span>
+                    </li>
+                    <li>
+                        <img src="../images/b12.jpg" alt="">
+                        <span>美图</span>
+                    </li>
+                    <li>
+                        <img src="../images/b13.jpg" alt="">
+                        <span>飞利浦</span>
+                    </li>
+                    <li>
+                        <img src="../images/b14.jpg" alt="">
+                        <span>联想</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 第五块div -->
+            <div id="fenLei">
+                <div id="fLeft"><span>相关分类</span></div>
+                <ul>
+                    <li><span>手机</span></li>
+                    <li><span>二手手机</span></li>
+                </ul>
+            </div>
+            <!-- 第六块div -->
+            <div id="priceRange">
+                <div id="pRleft"><span>价格</span></div>
+                <ul>
+                    <li><span>0</span><span>-</span><span>500</span></li>
+                    <li><span>500</span><span>-</span><span>1000</span></li>
+                    <li><span>1000</span><span>-</span><span>1700</span></li>
+                    <li><span>1700</span><span>-</span><span>2800</span></li>
+                    <li><span>2800</span><span>-</span><span>4500</span></li>
+                    <li><span>4500</span><span>-</span><span>6000</span></li>
+                    <li><span>6000</span><span>-</span><span>7500</span></li>
+                    <li><span>7500</span><span>-</span><span>999999</span></li>
+                </ul>
+            </div>
+            <!-- 第七块div -->
+            <div id="screenRange">
+                <div id="sRleft"><span>屏幕尺寸</span></div>
+                <ul>
+                    <li><span>6.1英寸以上</span></li>
+                    <li><span>5.5-6.0英寸</span></li>
+                    <li><span>5.5英寸</span></li>
+                    <li><span>5.1-5.4英寸</span></li>
+                    <li><span>5.0英寸</span></li>
+                    <li><span>4.6-4.9英寸</span></li>
+                    <li><span>4.1-4.5英寸</span></li>
+                    <li><span>4.0英寸以下</span></li>
+                </ul>
+            </div>
+            <!-- 第八块div -->
+            <div id="ramRange">
+                <div id="rRleft"><span>运行内存</span></div>
+                <ul>
+                    <li><span>8GB</span></li>
+                    <li><span>6GB</span></li>
+                    <li><span>4GB</span></li>
+                    <li><span>3GB</span></li>
+                    <li><span>2GB</span></li>
+                    <li><span>2GB以下</span></li>
+                </ul>
+            </div>
+            <!-- 第九块div -->
+            <div id="otherChioce">
+                <div id="oCleft"><span>其它选项</span></div>
+                <ul>
+                    <li><span>像素</span></li>
+                    <li><span>选购热点</span></li>
+                    <li><span>网络制式</span></li>
+                    <li><span>手机CPU</span></li>
+                    <li><span>颜色</span></li>
+                    <li><span>操作系统</span></li>
+                </ul>
+            </div>
+            <!-- 第十块div -->
+            <div id="shellChoice">
+                <ul id="ul1">
+                    <li><span>综合</span></li>
+                    <li><span>销量</span></li>
+                    <li><span>评价数</span></li>
+                    <li><span>价格</span></li>
+                    <li><input type="text" placeholder="¥"></li>
+                    <li><span>—</span></li>
+                    <li><input type="text" placeholder="¥"></li>
+                    <li><input type="text" placeholder="收货地址" disabled></li>
+                    <li><select name="" id="">
+                            <option value=""><span>重庆</span></option>
+                            <option value=""><span>无锡</span></option>
+                            <option value=""><span>合肥</span></option>
+                        </select></li>
+                </ul>
+                <ul id="ul2">
+                    <li><input type="checkbox" name="" id="ck1"><label for="ck1"><span>苏宁服务</span></label></li>
+                    <li><input type="checkbox" name="" id="ck2"><label for="ck2"><span>有货商品</span></label></li>
+                    <li><input type="checkbox" name="" id="ck3"><label for="ck3"><span>苏宁国际</span></label></li>
+                    <li><input type="checkbox" name="" id="ck4"><label for="ck4"><span>苏宁益品</span></label></li>
+                    <li>
+                        <span>&lt;</span>
+                        <span>1</span>
+                        <span>/50 &gt;</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 中央商品展示 -->
+            <div id="showPhone">
+                <ul>
+                    <li>
+                        <img src="../images/s1.jpg" alt="">
+                        <img src="../images/s1.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">2699</strong><span>.00</span>
+                        </div>
+                        <p>荣耀20 4800万超广角AI四摄 3200W<br>
+                            美颜自拍 麒麟980全网通版8GB+<br>128GB 幻影蓝 移动联通电信4G</p>
+                        <div class="Comment">
+                            <strong>400+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>抢</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <li>
+                        <img src="../images/s2.jpg" alt="">
+                        <img src="../images/s2.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">5588</strong><span>.00</span>
+                        </div>
+                        <p>Apple iPhone XR 128GB 移动联通<br>电信4G全网通手机 双卡双待</p>
+                        <div class="Comment">
+                            <strong>52万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>大聚惠</li>
+                            <li>满5580-400</li>
+                            <li>领券5180-100</li>
+                        </ul>:
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s3.jpg" alt="">
+                        <img src="../images/s3.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">4278.00</strong><span>.00</span>
+                        </div>
+                        <p>华为/HUAWEI P30 亮黑色 8GB+128<br>GB 莱卡
+                            三摄 未来影像 移动联通电<br>信4G全面屏全网通</p>
+                        <div class="Comment">
+                            <strong>1.4万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>大聚惠</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s4.jpg" alt="">
+                        <img src="../images/s4.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">1499</strong><span>.00</span>
+                        </div>
+                        <p>华为 荣耀(honer)20i 3200万AI自拍 超广角三摄 6.21
+                            英寸珍珠全面屏全网通版6GB+64GB 幻夜黑</p>
+                        <div class="Comment">
+                            <strong>1000+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>抢</li>
+                            <li>满1380-100</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s5.jpg" alt="">
+                        <img src="../images/s5.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">8888.00</strong><span>.00</span>
+                        </div>
+                        <p>Apple iPhone XS Max 256GB 深空<br>灰色
+                            移动联通电信4G全网通手机 双<br>卡双待</p>
+                        <div class="Comment">
+                            <strong>44万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>大聚惠</li>
+                            <li>满8880-200</li>
+                            <li>领券8680-400</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s7.jpg" alt="">
+                        <img src="../images/s7.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">1299</strong><span>.00</span>
+                        </div>
+                        <p>vivoZ3x 6+64G 极光蓝 性能实力<br>派
+                            全面屏游戏手机 全网通4G手机</p>
+                        <div class="Comment">
+                            <strong>6.7万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>大聚惠</li>
+                            <li>满480-50</li>
+                            <li>赠品</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s8.jpg" alt="">
+                        <img src="../images/s8.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">145</strong><span>.00</span>
+                        </div>
+                        <p>守护宝(诺基亚) L630移动/联通2G<br>老人机
+                            超长待机老人手机 学生备用<br>老年机功能</p>
+                        <div class="Comment">
+                            <strong>1.1万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>赠品</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s6.jpg" alt="">
+                        <img src="../images/s6.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">3298</strong><span>.00</span>
+                        </div>
+                        <p>【优先就近顺丰仓库发货】 vivo X27<br> 粉黛金
+                            8GB+256GB 骁龙710 全面屏<br>拍照游戏全网</p>
+                        <div class="Comment">
+                            <strong>7万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>满赠</li>
+                            <li>领券888-20</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s9.jpg" alt="">
+                        <img src="../images/s9.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">1899</strong><span>.00</span>
+                        </div>
+                        <p>OPPO K3 秘境黑8G+128G屏幕指纹<br>升降全面屏高
+                            通骁龙拍照智能美颜游<br>戏全网通4G</p>
+                        <div class="Comment">
+                            <strong>20万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>大聚惠</li>
+                            <li>赠品</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s10.jpg" alt="">
+                        <img src="../images/s10.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">2699</strong><span>.00</span>
+                        </div>
+                        <p>Meizu/魅族 魅族16s 6GB+128GB碳<br>纤黑 全面屏
+                            移动联通电信4G全网通<br>手机</p>
+                        <div class="Comment">
+                            <strong>2000+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>抢</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s9.jpg" alt="">
+                        <img src="../images/s9.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">9899</strong><span>.00</span>
+                        </div>
+                        <p>OPPO R19S 秘境黑16G+128G屏幕指纹升降全面屏高
+                            通骁龙拍照智能美颜游戏全网通4G</p>
+                        <div class="Comment">
+                            <strong>20万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>大聚惠</li>
+                            <li>赠品</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s10.jpg" alt="">
+                        <img src="../images/s10.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">3699</strong><span>.00</span>
+                        </div>
+                        <p>Meizu/魅族 魅族18s 8GB+128GB碳<br>纤黑 全面屏
+                            移动联通电信4G全网通<br>手机</p>
+                        <div class="Comment">
+                            <strong>2000+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>抢</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s4.jpg" alt="">
+                        <img src="../images/s4.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">7499</strong><span>.00</span>
+                        </div>
+                        <p>华为 荣耀(honer)mate40pro 3200万AI自拍 超广角四摄 6.21
+                            英寸珍珠全面屏全网通版6GB+64GB 幻夜黑</p>
+                        <div class="Comment">
+                            <strong>1000+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>抢</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s5.jpg" alt="">
+                        <img src="../images/s5.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">9888.00</strong><span>.00</span>
+                        </div>
+                        <p>Apple iPhoneXII 256GB 深空<br>灰色
+                            移动联通电信4G全网通手机 双<br>卡双待</p>
+                        <div class="Comment">
+                            <strong>44万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>大聚惠</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s7.jpg" alt="">
+                        <img src="../images/s7.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">1299</strong><span>.00</span>
+                        </div>
+                        <p>小米6+64G 极光蓝 性能实力<br>派
+                            全面屏游戏手机 全网通4G手机</p>
+                        <div class="Comment">
+                            <strong>6.7万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>大聚惠</li>
+                            <li>赠品</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s8.jpg" alt="">
+                        <img src="../images/s8.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">199</strong><span>.00</span>
+                        </div>
+                        <p>诺基亚 砸死人不偿命之移动/联通2G<br>老人机
+                            超长待机老人手机 学生备用<br>老年机功能</p>
+                        <div class="Comment">
+                            <strong>1.1万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <ul class="ul2nd">
+                            <li>赠品</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s6.jpg" alt="">
+                        <img src="../images/s6.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">6298</strong><span>.00</span>
+                        </div>
+                        <p>【优先就近顺丰仓库发货】 三星 glaxy10 粉黛金
+                            8GB+256GB 骁龙710 全面屏拍照游戏全网</p>
+                        <div class="Comment">
+                            <strong>79万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s6.jpg" alt="">
+                        <img src="../images/s6.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">2298</strong><span>.00</span>
+                        </div>
+                        <p>【优先就近顺丰仓库发货】 realme glaxy10 粉黛金
+                            8GB+256GB 骁龙710 全面屏拍照游戏全网</p>
+                        <div class="Comment">
+                            <strong>9万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s6.jpg" alt="">
+                        <img src="../images/s6.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">2298</strong><span>.00</span>
+                        </div>
+                        <p>【优先就近顺丰仓库发货】 美图 glaxy10 粉黛金
+                            8GB+256GB 骁龙710 全面屏拍照游戏全网</p>
+                        <div class="Comment">
+                            <strong>17万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s6.jpg" alt="">
+                        <img src="../images/s6.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">2298</strong><span>.00</span>
+                        </div>
+                        <p>【优先就近顺丰仓库发货】 努比亚 glaxy10 粉黛金
+                            8GB+256GB 骁龙710 全面屏拍照游戏全网</p>
+                        <div class="Comment">
+                            <strong>22万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s6.jpg" alt="">
+                        <img src="../images/s6.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">2798</strong><span>.00</span>
+                        </div>
+                        <p>【优先就近顺丰仓库发货】 飞利浦 glaxy10 粉黛金
+                            8GB+256GB 骁龙710 全面屏拍照游戏全网</p>
+                        <div class="Comment">
+                            <strong>107万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <img src="../images/s6.jpg" alt="">
+                        <img src="../images/s6.jpg" alt="" class="small">
+                        <div>
+                            <span>¥</span><strong class="price">12298</strong><span>.00</span>
+                        </div>
+                        <p>【美帝良心产品】 联想 power小清新<br> 粉黛金
+                            8GB+256GB 骁龙710 全面屏<br>拍照游戏全网</p>
+                        <div class="Comment">
+                            <strong>9999万+</strong>
+                            <span>评价</span>
+                        </div>
+                        <div class="dvlabel">苏宁自营</div>
+                        <table>
+                            <tr>
+                                <td><span class="FiveStar">☆</span><span>收藏</span></td>
+                                <td><span class="FiveStar">☆</span><span>关注</span></td>
+                                <td><span class="FiveStar">☆</span><span>查看详情</span></td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+            <div id="hideShowPhone">
+            </div>
+            <div id="indexFoot">
+                <a href="">说说您使用搜索的感受</a>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>...</li>
+                    <li>50</li>
+                    <li>共50页,</li>
+                    <li><input type="button" value="跳转到" id="btn"></li>
+                    <li><input type="text" id="txt"></li>
+                    <li>确定</li>
+                </ul>
+            </div>
+            <!-- 底部页脚商品展示 -->
+            <div id="showsmLike">
+                <div id="smLikehead">
+                    <span>搜索此类商品的人最终购买</span>
+                    <b>热销商品推荐</b>
+                </div>
+                <ul id="ul1">
+                    <li>
+                        <img src="../images/hot1.jpg" alt="">
+                        <div>
+                            <span>¥</span><strong>5588</strong><span>.00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/hot2.jpg" alt="">
+                        <div>
+                            <span>¥</span><strong>5288</strong><span>.00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/hot3.jpg" alt="">
+                        <div>
+                            <span>¥</span><strong>5588</strong><span>.00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/hot4.jpg" alt="">
+                        <div>
+                            <span>¥</span><strong>8788</strong><span>.00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/hot5.jpg" alt="">
+                        <div>
+                            <span>¥</span><strong>798</strong><span>.00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/hot1.jpg" alt="">
+                        <div>
+                            <span>¥</span><strong>4288</strong><span>.00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/hot3.jpg" alt="">
+                        <div>
+                            <span>¥</span><strong>3388</strong><span>.00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/hot2.jpg" alt="">
+                        <div>
+                            <span>¥</span><strong>2588</strong><span>.00</span>
+                        </div>
+                    </li>
+                </ul>
+                <div id="theLast">
+                    <ul>
+                        <li>
+                            <span>您可能在找：</span>
+                        </li>
+                        <li>
+                            <a href="">iphonx</a>
+                        </li>
+                        <li>
+                            <a href="">华为nova5 pro</a>
+                        </li>
+                        <li>
+                            <a href="">real me X</a>
+                        </li>
+                        <li>
+                            <a href="">OPPO Reno</a>
+                        </li>
+                        <li>
+                            <a href="">三星 A70</a>
+                        </li>
+                        <li>
+                            <a href="">红米 note7 prov</a>
+                        </li>
+                        <li>
+                            <a href="">vivo IQOO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 右边导航栏 -->
+        <div id="right">
+            <!-- 上半段 -->
+            <div id="person">
+                <a href=""><img src="../images/right-nav.png" alt=""></a>
+            </div>
+            <div id="shopcar">
+                <a href=""><img src="../images/right-nav.png" alt=""></a>
+                <p>购</p>
+                <p>物</p>
+                <p>车</p>
+                <span>0</span>
+            </div>
+            <div id="commentLb">
+                <a href=""><img src="../images/right-nav.png" alt=""></a>
+            </div>
+            <!-- 下半段 -->
+            <div id="rmb">
+                <a href=""><img src="../images/right-nav.png" alt=""></a>
+            </div>
+            <div id="timeshop">
+                <a href=""><img src="../images/right-nav.png" alt=""></a>
+            </div>
+            <div id="lastShowTime">
+                <a href=""><img src="../images/right-nav.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="superday-foot">
+
+        <div class="foot-box">
+            <p class="foot-list">
+                <a href="#">苏宁互联</a>
+                <span>|</span>
+                <a href="#">苏宁金融</a>
+                <span>|</span>
+                <a href="#">苏宁支付</a>
+                <span>|</span>
+                <a href="#">PP视频</a>
+                <span>|</span>
+                <a href="#">红孩子</a>
+                <span>|</span>
+                <a href="#">苏宁物流</a>
+                <span>|</span>
+                <a href="#">手机苏宁</a>
+                <span>|</span>
+                <a href="#">零售云</a>
+                <span>|</span>
+                <a href="#">知识产权举报</a>
+                <span>|</span>
+                <a href="#">投资者关系</a>
+                <span>|</span>
+                <a href="#">苏宁智能</a>
+            </p>
+            <p class="foot-list">
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">诚聘英才</a>
+                <span>|</span>
+                <a href="#">合作招商</a>
+                <span>|</span>
+                <a href="#">广告平台</a>
+                <span>|</span>
+                <a href="#">苏宁联盟</a>
+                <span>|</span>
+                <a href="#">苏宁招标</a>
+                <span>|</span>
+                <a href="#">隐私政策</a>
+                <span>|</span>
+                <a href="#">用户体验提升计划</a>
+                <span>|</span>
+                <a href="#">股东会员认证</a>
+            </p>
+            <p class="foot-list2">
+                Copyright© 2002-2020，苏宁易购集团股份有限公司版权所有
+            </p>
+            <p class="foot-list2">
+                苏ICP备10207551号-4
+            </p>
+            <p class="foot-list2">
+                Copyright© 2002-2020，苏宁易购集团股份有限公司版权所有
+            </p>
+            <p class="foot-list2">
+                合字B2-20180025
+                <span>|</span>
+                <a href="#">出版物经营许可证新出发苏批字第A-243号</a>
+            </p>
+            <div class="img">
+                <img class="foot-list" src="../images/chengxin.png" alt="">
+                <img class="foot-list" src="../images/dianxin.jpg" alt="">
+                <img class="foot-zhizhao" src="../images/dianzizhizhao.png" alt="">
+                <img class="foot-list" src="../images/unicom.png" alt="">
+                <img class="foot-list" src="../images/wxrz.png" alt="">
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,815 @@
+*{
+    margin: 0;
+    padding: 0;    
+    font-family: "微软雅黑";
+}
+/* a{
+    text-decoration: none;
+    color: #999;
+} */
+.topNav{
+    width: 100%;
+    height: 30px;
+    background-color:#f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+.topNav>.topNavcenter{
+    margin: 0 auto;
+    /* 宽度不设置百分比，不然随页面放大缩小会一直这么大 */
+    width: 990px;
+    /* min-width: 990px; */
+    height: 100%;
+    /* border: 1px solid red; */
+}
+/* 中间区域的div全部浮动到一行内 */
+.topNav>.topNavcenter div{
+    float: left;
+    width: 72px;
+    min-width: 60px;
+    line-height: 30px;
+    height: 100%;
+}
+.topNav>.topNavcenter div a{
+    display: inline-block;
+    text-decoration: none;
+    color: #999;
+}
+.topNav>.topNavcenter>.fa-home{
+    width: 85px;
+    margin-right: 15px;
+}
+/* .topNav>.topNavcenter>.fa-home span{
+    margin-left: 3px;
+} */
+.topNav>.topNavcenter>.fa-shopping-cart{
+    width: 75px;
+    margin-right: 6px;
+}
+/* .topNav>.topNavcenter>.fa-shopping-cart span{
+    margin-left: 3px;
+} */
+.topNav>.topNavcenter div a:hover{
+    color: #f60;
+}
+.topNav>.topNavcenter div span{
+    display: inline-block;
+    padding-left: 0.6rem;
+}
+
+/* 登录和注册默认橙色 */
+.login a span,.register a span{
+    color: #f60;
+}
+
+
+
+
+.webnav{
+    position: relative;
+}
+.shangjia{
+    position: relative;
+}
+.order{
+    position: relative;
+}
+.yigou{
+    position: relative;
+}
+.extendList1{
+    /* width: 50px;
+    height: 300px; */
+    display: none;
+    background-color: #fff;
+    /* color: #fff; */
+    z-index: 1000;
+    position: absolute;
+    /* border: 1px solid black; */
+    top: 28px;
+    left: -1px;
+}
+
+
+.extendList1 .border{
+    
+    width: 95%;
+    height: 100%;
+    /* border: 1px solid black; */
+    list-style: none;
+    background-color: #fff;
+}
+.extendList1 .border div{
+    width: 65px;
+}
+.extendList1 div ul{
+    width: 72px;
+    display: block;
+    border: 1px solid #ddd;
+    border-top: #fff;
+    list-style: none;
+    
+    background-color: #fff;
+}
+
+.yigou .extendList1 .border{
+    width: 162px;
+    /* height: 170px; */
+    /* border: 1px solid black; */
+}
+.yigou .extendList1 div .ul1{
+    width: 80px;
+    /* height: 131px; */
+    float: left;
+    display: block;
+    border: 1px solid #ddd;
+    /* border: 1px solid black; */
+    border-top: #fff;
+    list-style: none;
+    
+    background-color: #fff;
+    /* overflow: hidden; */
+}
+/* .yigou .extendList1 div ul img{
+ text-indent: 3em;
+} */
+
+.yigou .extendList1 div .ul2{
+    /* border: 1px solid black; */
+    /* overflow: hidden; */
+    width: 80px;
+    height: 135px;
+    float: left;
+    display: block;
+    border: 1px solid #ddd;
+    border-top: #fff;
+    list-style: none;
+    
+    background-color: #fff;
+}
+.yigou .extendList1 .clear{
+    clear: both;
+}
+
+/* .clear{
+    clear: both;
+    border: 1px solid black;
+} */
+.gap{
+    margin-top: 10px;
+}
+
+
+
+/* 第二块red区域 */
+.secNav{
+    width: 100%;
+    height: 110px; 
+    
+}
+.secNav>.secNavcenter{
+    margin: 0 auto;
+    width: 990px;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+.secNav>.secNavcenter>.secNavleft{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.secNav>.secNavcenter>.secNavright{
+    width : 80%;
+    height: 100%;
+    float: right;
+    /* border: 1px solid red; */
+}
+.secNav>.secNavcenter>.secNavright>.secRight{
+    width: 75%;
+    height: 100%;
+    float: right;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.secNav>.secNavcenter>.secNavright>.secRight>.fa-search{
+    height: 45%;
+    line-height: 43px;
+    width: 93%;
+    color: #ccc;
+    padding-left: 10px;
+    border: 2px solid #fA0;
+    position: absolute;
+    top: 24px;
+    
+}
+.secNav>.secNavcenter>.secNavright>.secRight>.fa-search>input{
+    width: 78%;
+    margin-left: 10px;
+    color: black;
+    border: none;
+    outline: none;
+}
+.secNav>.secNavcenter>.secNavright>.secRight>.fa-search>.btn{
+    height: 109%;
+    width: 20%;
+    line-height: 40px;
+    color:white;
+    font-weight: bolder;
+    background-color: #fA0;
+    position: absolute;
+    top: -2px;
+    right: -10px;
+}
+.secNav>.secNavcenter>.secNavright>.secRight>.smalla{
+    width: 95%;
+    height: 20%;
+    /* border: 1px solid red; */
+    position: absolute;
+    top:75px;
+    left: 0;
+}
+.secNav>.secNavcenter>.secNavright>.secRight>.smalla>.short{
+    width: 40px;
+    margin-left: 3px;
+    padding-left: 6px;
+    border-left: 1px solid #ccc;
+}
+.secNav>.secNavcenter>.secNavright>.secRight>.smalla div{
+    float: left;
+    height: 100%;
+    width: 60px;
+    /* border: 1px solid red; */
+}
+.secNav>.secNavcenter>.secNavright>.secRight>.smalla>div>a{
+    text-decoration: none;
+    color: #999;
+
+}
+.secNav>.secNavcenter>.secNavright>.secRight>.smalla>.color{
+    width: 86px;
+    
+    margin-left: 3px;
+    padding-left: 6px;
+    border-left: 1px solid #ccc;
+}
+.secNav>.secNavcenter>.secNavright>.secRight>.smalla div>a>span:hover{
+    color: #f60;
+}
+.secNav>.secNavcenter>.secNavright>.secRight>.smalla>.color>a>span{
+    color: #f60;
+}
+
+
+
+/* 第三行插入图片价格栏，包括放大镜效果 */
+.view{
+    width: 100%;
+    height: 500px;
+    
+}
+.viewCenter{
+    margin: 50px auto;
+    width: 1150px;
+    height: 100%;
+    border:1px solid #eee;
+}
+.goodsValue{
+    width: 80%;
+    height: 100%;
+    float: left;
+    border:1px solid #eee;
+    position: relative;
+}
+/* 左侧是图片 */
+.picPosition{
+    width: 45%;
+    height: 100%;
+    float: left;
+    /* border: 1px solid red; */
+}
+
+/* .wholePic img{
+    margin: 20px 35px;
+    cursor: move; 
+} */
+
+.previewPic{
+    width: 100%;
+    height: 17%;
+    cursor: pointer;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.previewPic .fir{
+    position: absolute;
+    left: 5%;
+    top: 0.8rem;
+}
+.previewPic .sec{
+    position: absolute;
+    left: 25%;
+    top: 0.8rem;
+}
+.previewPic .thi{
+    position: absolute;
+    left: 45%;
+    top: 0.8rem;
+}
+.previewPic .for{
+    position: absolute;
+    left: 65%;
+    top: 0.8rem;
+}
+.previewPic .fiv{
+    position: absolute;
+    left: 85%;
+    top: 0.8rem;
+}
+
+/* .previewPic img{
+    margin: 15px 8px;
+} */
+.picPosition span{
+    display: inline-block;
+    height: 7%;
+    /* border: 1px solid red; */  
+}
+.picPosition .color{
+    margin-left: 1.5rem;
+    color: #f60;
+    font-size: 2rem;
+}
+.picPosition span a{
+    text-decoration: none;
+    color: #999;
+}
+
+/* 商品信息栏 */
+.goodsIntro{
+    width: 55%;
+    float: left;
+    height: 100%;
+    position: relative;
+    z-index: 11;
+    /* border: 1px solid red; */
+}
+.goodsIntro>span{
+    display: block;
+    width: 90%;
+    margin: 15px 15px;
+    /* border: 1px solid red; */
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+.goodsIntro>div{
+    width: 90%;
+    height: 13%;
+    margin: 15px 15px;
+    background-color:#fff2e8 ;
+}
+.goodsIntro>div>span{
+    line-height: 60px;
+}
+.goodsIntro>div>span:nth-child(1){
+    padding-left: 20px;
+}
+.goodsIntro>div>span:nth-child(2){
+    line-height: 65px;
+    padding-left: 100px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: rgb(255, 60, 0);
+}
+
+/* 尺码 */
+.goodsIntro>div:nth-child(3){
+    width: 90%;
+    height: 10%;
+    /* border: 1px solid red; */
+    background-color: #fff;
+}
+.goodsIntro>div:nth-child(3) span{
+    display: block;
+    float: left;
+    line-height: 50px;
+    margin-right: 100px;
+}
+.goodsIntro>div:nth-child(3) div{
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.goodsIntro>div:nth-child(4){
+    width: 90%;
+    height: 12%;
+    /* border: 1px solid red; */
+    background-color: #fff;
+}
+.goodsIntro>div:nth-child(4) span{
+    display: inline-block;
+    margin-right: 98px;
+}
+.goodsIntro>div:nth-child(4) img{
+    
+    cursor: pointer;
+    
+    /* border: 2px solid red; */
+}
+.goodsIntro>div:nth-child(5){
+    width: 90%;
+    height: 12%;
+    /* border: 1px solid red; */
+    background-color: #fff;
+}
+.goodsIntro>div:nth-child(5) .span1{
+    display: block;
+    width: 150px;
+    height: 40px;
+    
+    /* border: 1px solid #ccc; */
+    float: left;
+}
+.goodsIntro>div:nth-child(5) .border{
+    float: left;
+    margin-top: 13px;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.goodsIntro>div:nth-child(5) .span2{
+    display: block;
+    float: left;
+}
+.goodsIntro>div:nth-child(5) .border .fa-minus{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #ddd;
+    border-right: 1px solid #ccc;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+.goodsIntro>div:nth-child(5) .border .fa-plus{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #ddd;
+    border-left: 1px solid #ccc;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.goodsIntro>div:nth-child(5) .border span{
+    
+    display: block;
+    width: 80px;
+    margin-left: 46%;
+    /* position: absolute;
+    left: 40px; */
+}
+.goodsIntro>div:nth-child(6){
+    width: 90%;
+    height: 20%;
+    /* border: 1px solid red; */
+    background-color: #fff;
+}
+.goodsIntro>div:nth-child(6) .buyRight{
+    width: 43%;
+    height: 40%;
+    float: left;
+    color: #e5511d;
+    border: 1px solid#F0CAB6;
+    font-size: larger;
+    line-height: 35px;
+    text-align: center;
+    background-color: #FFD9BC;
+    cursor: pointer;
+}
+/* .goodsIntro>div:nth-child(6) .buyRight span{
+    text-align: center;
+} */
+.goodsIntro>div:nth-child(6) .addCart{
+    width: 53%;
+    height: 40%;
+    font-size: larger;
+    line-height: 35px;
+    text-align: center;
+    float: right;
+    border: 1px solid #F22D00;
+    background-color: #F22D00;
+    color: #fff;
+    cursor: pointer;
+}
+.goodsIntro>div:nth-child(6) .addCart span{
+    margin-left: -15px;
+}
+
+
+
+.wholePic{
+    width: 340px;
+    height: 340px;
+    position: relative;
+    /* border: 1px solid black; */
+    margin: 20px 35px;
+}
+.small{
+    width: 340px;
+    height: 340px;
+    position: relative;
+    /* margin: 20px 35px; */
+    /* border: 1px solid red; */
+}
+/* 放大的图片先隐藏 */
+.big{
+    display: none;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    position: absolute;
+    top:18px;
+    left: 420px;
+    z-index: 10000;
+    border: 1px solid red;
+}
+.big img{
+    position: absolute;
+    border: 1px solid red;
+}
+.mask {
+    width: 135px;
+    height: 135px;
+    background: rgba(255, 255, 0, 0.4);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: move;
+    display: none;
+}
+
+
+/* 提示框 */
+.alerts{
+    width: 300px;
+    height: 160px;
+    box-shadow: 0 0 10px 10px #f5f5f5;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 100000;
+    position: fixed;
+    top: 200px;
+    left: 45%;
+}
+.over{
+    width: 30px;
+    height: 30px ;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    line-height: 27px;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+
+}
+.container{
+    
+    
+    /* border: 1px solid red; */
+    width: 40px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 60px ;
+    
+    
+}
+
+.shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    z-index: 10000;
+    display:none;
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+.store{
+    width: 20%;
+    height: 100%;
+    float: right;
+    border:1px solid #eee;
+}
+.upInfo{
+    width: 100%;
+    height: 50%;
+    border: 2px solid #fA0;
+}
+.downInfo{
+    width: 100%;
+    height: 50%;
+    border: 1px solid #ccc;
+}
+.information{
+    width: 90%;
+    height: 55%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+.information>a{
+    text-decoration: none;
+    display: block;
+    margin: 5px 0 7px 0px;
+}
+.information>a>span{
+    display: block;
+    color: black;
+    font-family: "微软雅黑";
+    font-weight: bolder;
+}
+.information>p{
+    line-height: 15px;
+}
+.information>p>.stars{
+    color: #f60;
+}
+.level{
+    width: 100%;
+    height: 20%;
+}
+.level>div{
+    margin-top: 5px;
+    width: 30%;
+    height: 80%;
+    
+    /* border: 1px solid black; */
+    float: left;
+}
+.level>.line{
+    border-right: 1px solid #ccc;
+}
+.level>div>span{
+    padding-left: 16px;
+    display: block;
+}
+.level>div>.color{
+    font-weight: bolder;
+    color: #f60;
+}
+.btn{
+    width: 100%;
+    height: 30%;
+    
+}
+.btn1{
+    float: left;
+    line-height: 40px;
+    width: 49%;
+    border: 1px solid #eee;
+    background-color: #f5f5f5;
+    height: 70%;
+    cursor: pointer;
+    font-family: "微软雅黑";
+}
+.btn1:hover{
+    background-color: #ccc;
+}
+.btn2{
+    float: right;
+    width: 49%;
+    line-height: 40px;
+    height: 70%;
+    border: 1px solid #eee;
+    background-color: #f5f5f5;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: #ccc;
+}
+.downInfo{
+    border: 1px solid #eee;
+}
+.downInfo>div>span{
+    display: block;
+    line-height: 25px;
+    height: 25px;
+    margin-left: 15px;
+    font-weight: bolder;
+}
+.picDv{
+    position: relative;
+}
+.picDv div{
+    /* border: 1px solid black; */
+    width: 38%;
+    height: 41%;
+    /* float: left; */
+    margin: 3px 7px 3px 10px;
+}
+.picDv div>span{
+    color: #f60;
+    font-weight: bolder;
+}
+.picDv div>a{
+    display: inline-block;
+    width: 81px;
+    height: 81px;
+}
+.img1{
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+.img2{
+    position: absolute;
+    top: 4px;
+    left: 106px;
+}
+.img3{
+    position: absolute;
+    top: 104px;
+    left: 10px;
+}
+.img4{
+    position: absolute;
+    top: 104px;
+    left: 106px;
+}
+.picDv div>a>img:hover{
+    display: block;
+    border: 1px solid #f60;
+}
+
+
+
+
+
+/* 页脚 */
+.foot{
+    margin-top: 10px;
+    height:180px;
+    z-index: 50;
+}
+.foot>.foot-box{
+    width: 1140px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.foot>.foot-box>.foot-list{
+    color: #ccc;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.foot>.foot-box>.foot-list>a{
+    text-decoration: none;
+    color: #666666;
+}
+.foot>.foot-box>.foot-list2{
+    color: #999;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.foot>.foot-box>.foot-list2>a{
+    text-decoration: none;
+    color: #999;
+}
+.foot>.foot-box>.img{
+    width: 350px;
+    /* border: 1px solid red; */
+    margin: 15px auto;
+}
+.foot>.foot-box>.img>img{
+    /* border: 1px solid red; */
+    display: inline-block;
+   
+}
+.foot>.foot-box>.img>.foot-zhizhao{
+    width: 24px;
+    height: 24px;
+}

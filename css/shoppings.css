@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+span{
+    font-size: 13px;
+    font-family: "宋体";
+    color: #999;
+}
+a{
+    text-decoration: none;
+    color: rgb(87, 85, 85);
+    font-size: 13px;
+    font-family: "宋体";
+}
+a:hover{
+    color: orangered;
+}
+strong{
+    color: orangered;
+}
+/* 第一行导航栏 */
+a:hover span{
+    color: #f60;
+}
+.topNav{
+    width: 100%;
+    height: 30px;
+    background-color:#f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+.topNav>.topNavcenter{
+    margin: 0 auto;
+    /* 宽度不设置百分比，不然随页面放大缩小会一直这么大 */
+    width: 990px;
+    /* min-width: 990px; */
+    height: 100%;
+    /* border: 1px solid red; */
+}
+/* 中间区域的div全部浮动到一行内 */
+.topNav>.topNavcenter div{
+    float: left;
+    width: 71px;
+    min-width: 60px;
+    line-height: 30px;
+    height: 100%;
+}
+.topNav>.topNavcenter div a{
+   /*  display: inline-block; */
+    text-decoration: none;
+    color: #999;
+}
+.topNav>.topNavcenter>.fa-home{
+    width: 85px;
+    margin-right: 15px;
+}
+/* .topNav>.topNavcenter>.fa-home span{
+    margin-left: 3px;
+} */
+.topNav>.topNavcenter>.fa-shopping-cart{
+    width: 75px;
+    margin-right: 6px;
+}
+/* .topNav>.topNavcenter>.fa-shopping-cart span{
+    display: inline-block;
+    
+} */
+.topNav>.topNavcenter div:hover{
+    color: #f60;
+}
+.topNav>.topNavcenter div span{
+    /* display: inline-block; */
+    /* border: 1px solid gray; */
+    padding-left: 0.6rem;
+}
+/* 登录和注册默认橙色 */
+.login a span,.register a span{
+    color: #f60;
+}
+.webnav{
+    position: relative;
+}
+.shangjia{
+    position: relative;
+}
+.order{
+    position: relative;
+}
+.yigou{
+    position: relative;
+}
+.webnav ul{
+    width: 55px;
+    /* height: 220px; */
+    border: 1px solid #999;
+   /*  position: absolute;
+    left: -1px; */
+    background-color: #fff;
+    display: none;
+}
+.webnav ul li a span:hover{
+    color: orangered;
+}
+.webnav ul li:first-of-type span{
+    color: black;
+    font-size: 0.8rem;
+}
+.yigou .extendList1 .border{
+    width: 164px;
+    height: 152px;
+    border: 1px solid #ddd;
+}
+.yigou .extendList1 div ul{
+    width: 80px;
+    float: left;
+   /*  display: block; */
+    border: 1px solid #ddd;
+    border-top: #fff;
+    list-style: none;
+    
+    background-color: #fff;
+}
+/* .yigou .extendList1 div ul img{
+ text-indent: 3em;
+} */
+/* .yigou .extendList1 div .ul2 li{
+    height: 28px;
+    border: 1px solid red;
+} */
+/* .yigou .extendList1 div .ul1 li{
+    height: 28px;
+    border: 1px solid red;
+} */
+.yigou .extendList1 div .ul2{
+    width: 80px;
+    height: 150px;
+    float: left;
+    display: block;
+ /*    border: 1px solid #ddd;
+    border-top: #fff; */
+    list-style: none;
+    
+    background-color: #fff;
+}
+.gap{
+    margin-top: 18px;
+}
+.extendList1{
+    /* width: 50px;
+    height: 300px; */
+    display: none;
+    background-color: #fff;
+    /* color: #fff; */
+    z-index: 1000;
+    position: absolute;
+    /* border: 1px solid black; */
+    top: 28px;
+    left: -1px;
+}
+
+
+.extendList1 .border{
+    
+    width: 95%;
+    height: 100%;
+    /* border: 1px solid black; */
+    list-style: none;
+    background-color: #fff;
+}
+.extendList1 .border div{
+    width: 65px;
+}
+.extendList1 div ul{
+    width: 72px;
+    display: block;
+    border: 1px solid #ddd;
+    border-top: #fff;
+    list-style: none;
+    
+    background-color: #fff;
+}
+
+/* 主体 */
+#mainshop{
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+}
+#mainshop a{
+    text-decoration: none;
+    display: block;
+}
+#mainshop img{
+    width: 160px;
+    height: 90px;
+    float: left;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+#h_input{
+    width: 400px;
+    height: 35px;
+    background-color: orange;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: relative;
+    float: right;
+    border: 1px solid orange;
+}
+#h_input label span{
+    display: inline-block;
+    width: 31px;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(155, 151, 151);
+    font-size: large;
+}
+#h_input #text{
+    width: 308px;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 31px;
+}
+#h_input #btn{
+    position: absolute;
+    right: 0;
+    width: 14%;
+    height: 100%;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+#h_input #btn:hover{
+    background-color: rgb(221, 145, 3);
+}
+/* 主要结算区域 */
+#contain{
+    width: 100%;
+    clear: both;
+    position: relative;
+}
+#contain #ul1{
+    height: 50px;
+    border: 1px solid rgb(180, 179, 179);
+    box-shadow: 0 0 2px 3px rgba(133, 133, 133, 0.4);
+}
+#contain #ul1 li{
+    float: left;
+    margin: 15px 88px 15px 15px;
+    text-align: center;
+}
+.btnSum,.btn1{
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    border: none;
+    background-color: white;
+    opacity: 0.4;
+    cursor: pointer;
+}
+/* ul2开始商品内容 */
+#contain #ul2,
+#contain #ul3,
+#contain #ul4{
+    height: 120px;
+    clear: both;
+    margin-top: 40px;
+    border: 1px solid rgb(247, 216, 177);
+    background-color: rgb(247, 216, 177);
+}
+#contain #ul2 li,
+#contain #ul3 li,
+#contain #ul4 li{
+    width: 120px;
+    height: 120px;
+   /*  border: 1px solid rgb(180, 179, 179); */
+    float: left;
+    margin-right: 5px;
+}
+#contain #ul2 li:first-of-type,
+#contain #ul3 li:first-of-type,
+#contain #ul4 li:first-of-type{
+    width: 60px;
+    text-align: center;
+    line-height: 120px;
+}
+#contain #ul2 li:nth-child(2),
+#contain #ul3 li:nth-child(2),
+#contain #ul4 li:nth-child(2){
+    width: 340px;
+}
+#contain #ul2 li:nth-child(3),
+#contain #ul2 li:nth-child(5),
+#contain #ul3 li:nth-child(3),
+#contain #ul3 li:nth-child(5),
+#contain #ul4 li:nth-child(3),
+#contain #ul4 li:nth-child(5){
+    margin-right: 28px;
+    text-align: center;
+    line-height: 120px;
+    color: orangered;
+}
+#contain #ul2 li:nth-child(4),
+#contain #ul3 li:nth-child(4),
+#contain #ul4 li:nth-child(4){
+    margin-right: 20px;
+}
+#contain #ul2 li:nth-child(4) #chanGe,
+#contain #ul3 li:nth-child(4) #chanGe,
+#contain #ul4 li:nth-child(4) #chanGe{
+    width: 60px;
+    height: 20px;
+    background-color: orangered;
+    clear: both;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+#contain #ul2 li:nth-child(4) #chanGe input,
+#contain #ul3 li:nth-child(4) #chanGe input,
+#contain #ul4 li:nth-child(4) #chanGe input{
+    width: 20px;
+    height: 20px;
+    border: none;
+    vertical-align: middle;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+}
+#contain #ul2 li:nth-child(4) #chanGe input:nth-child(2),
+#contain #ul3 li:nth-child(4) #chanGe input:nth-child(2),
+#contain #ul4 li:nth-child(4) #chanGe input:nth-child(2){
+    cursor: text;
+}
+#contain #ul2 li:nth-child(5),
+#contain #ul3 li:nth-child(5),
+#contain #ul4 li:nth-child(5){
+    margin-right: 25px;
+}
+#contain #ul2 li #showIphone img,
+#contain #ul3 li #showIphone img,
+#contain #ul4 li #showIphone img{
+    width: 100px;
+    height: 100px;
+}
+#contain #ul2 li #showIphone,
+#contain #ul3 li #showIphone,
+#contain #ul4 li #showIphone{
+    position: relative;
+}
+#contain #ul2 li #showIphone #hideShow,
+#contain #ul3 li #showIphone #hideShow,
+#contain #ul4 li #showIphone #hideShow{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 80px;
+    top: -40px;
+    display: none;
+}
+#contain #ul2 li:last-child #fenZhuang,
+#contain #ul3 li:last-child #fenZhuang,
+#contain #ul4 li:last-child #fenZhuang{
+    margin-top: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+#contain #ul2 li:last-child #fenZhuang span:hover,
+#contain #ul3 li:last-child #fenZhuang span:hover,
+#contain #ul4 li:last-child #fenZhuang span:hover{
+    color: orangered;
+}
+/* 结算页面 */
+#toSumPrice{
+    height: 50px;
+    border: 1px solid rgb(185, 184, 184);
+    margin-top: 20px;
+    box-shadow: 0 0 2px 3px rgba(133, 133, 133, 0.4);
+    clear: both;
+}
+
+#toSumPrice ul{
+    clear: both;
+    position: relative;
+}
+#toSumPrice ul li{
+    width: 24%;
+    height: 50px;
+    float: left;
+}
+#toSumPrice ul li input{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#toSumPrice ul li:nth-child(2){
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+#toSumPrice ul li:nth-child(2):hover{
+    color: orangered;
+}
+#toSumPrice ul li:nth-child(3) span:first-of-type{
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 18px;
+    font-size: 18px;
+}
+#toSumPrice ul li:nth-child(3) span:nth-child(2){
+    color: orangered;
+}
+#toSumPrice ul li:nth-child(3) span:last-child{
+    font-size: 18px;
+    color: orangered;
+}
+#toSumPrice ul li:last-of-type{
+    text-align: center;
+    line-height: 50px;
+    background-color: orangered;
+    border:1px solid orangered;
+    position: absolute;
+    right: 0;
+}
+#toSumPrice ul li:last-of-type:hover{
+    cursor: pointer;
+    background-color: rgb(184, 58, 12);
+}
+#toSumPrice ul li:last-of-type span{
+    font-size: 25px;  
+    color: white;
+    font-weight: bolder;
+}
+#theLast{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(180, 180, 179);
+    position: absolute;
+    top: 250px;
+    left: 450px;
+    display: none;
+    border-radius: 10px;
+    z-index: 1000;
+}
+#theLast span{
+    font-size: 30px;
+    font-family: "楷体";
+    font-weight: bolder;
+    margin-left: 20px;
+    line-height: 120px;
+    color: white;
+}
+#theLast span:nth-child(2){
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: -40px;
+    color: rgb(235, 21, 21);
+    cursor: pointer;
+}
+#theLast #buybuy{
+    margin-left: 20px;
+}
+.shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    z-index: 100;
+    display: none;
+    opacity: 0.3;
+}
+/* 页脚 */
+.superday-foot{
+    margin-top: 50px;
+    height:180px;
+    z-index: 50;
+}
+.superday-foot>.foot-box{
+    width: 1140px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.superday-foot>.foot-box>.foot-list{
+    color: #ccc;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.superday-foot>.foot-box>.foot-list>a{
+    text-decoration: none;
+    color: #666666;
+}
+.superday-foot>.foot-box>.foot-list2{
+    color: #999;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.superday-foot>.foot-box>.foot-list2>a{
+    text-decoration: none;
+    color: #999;
+}
+.superday-foot>.foot-box>.img{
+    width: 350px;
+    /* border: 1px solid red; */
+    margin: 15px auto;
+}
+.superday-foot>.foot-box>.img>img{
+    /* border: 1px solid red; */
+    display: inline-block;
+   
+}
+.superday-foot>.foot-box>.img>.foot-zhizhao{
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帮助中心</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../icomoon/font.css">
+    <link rel="stylesheet" href="../css/help.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+</head>
+<style>
+    #bg1 {
+        background: url("../images/jingca.png") no-repeat;
+    }
+
+    .topNav {
+        width: 100%;
+        height: 30px;
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #eee;
+    }
+
+    .topNav>.topNavcenter {
+        margin: 0 auto;
+        /* 宽度不设置百分比，不然随页面放大缩小会一直这么大 */
+        width: 990px;
+        /* min-width: 990px; */
+        height: 100%;
+        /* border: 1px solid red; */
+    }
+
+    /* 中间区域的div全部浮动到一行内 */
+    .topNav>.topNavcenter div {
+        float: left;
+        width: 72px;
+        min-width: 60px;
+        line-height: 30px;
+        height: 100%;
+    }
+
+    .topNav>.topNavcenter div a {
+        display: inline-block;
+        text-decoration: none;
+        color: #999;
+        /* font-size: 30px;
+     */
+    }
+
+    .topNav>.topNavcenter>.fa-home {
+        width: 85px;
+        margin-right: 15px;
+    }
+
+    /* .topNav>.topNavcenter>.fa-home span{
+    margin-left: 3px;
+} */
+    .topNav>.topNavcenter>.fa-shopping-cart {
+        width: 75px;
+        margin-right: 6px;
+    }
+
+    /* .topNav>.topNavcenter>.fa-shopping-cart span{
+    margin-left: 3px;
+} */
+    .topNav>.topNavcenter div a:hover {
+        color: #f60;
+    }
+
+    .topNav>.topNavcenter div span {
+        display: inline-block;
+        padding-left: 0.6rem;
+    }
+
+    /* 登录和注册默认橙色 */
+    .login a span,
+    .register a span {
+        color: #f60;
+    }
+
+
+
+
+    .webnav {
+        position: relative;
+    }
+
+    .shangjia {
+        position: relative;
+    }
+
+    .order {
+        position: relative;
+    }
+
+    .yigou {
+        position: relative;
+    }
+
+    .extendList1 {
+        /* width: 50px;
+    height: 300px; */
+        display: none;
+        background-color: #fff;
+        /* color: #fff; */
+        z-index: 1000;
+        position: absolute;
+        /* border: 1px solid black; */
+        top: 28px;
+        left: -1px;
+    }
+
+
+    .extendList1 .border {
+
+        width: 95%;
+        height: 100%;
+        /* border: 1px solid black; */
+        list-style: none;
+        background-color: #fff;
+    }
+
+    .extendList1 .border div {
+        width: 65px;
+    }
+
+    .extendList1 div ul {
+        width: 72px;
+        display: block;
+        border: 1px solid #ddd;
+        border-top: #fff;
+        list-style: none;
+
+        background-color: #fff;
+    }
+
+    .yigou .extendList1 .border {
+        width: 162px;
+        /* height: 170px; */
+        /* border: 1px solid black; */
+    }
+
+    .yigou .extendList1 div .ul1 {
+        width: 80px;
+        /* height: 131px; */
+        float: left;
+        display: block;
+        border: 1px solid #ddd;
+        /* border: 1px solid black; */
+        border-top: #fff;
+        list-style: none;
+
+        background-color: #fff;
+        /* overflow: hidden; */
+    }
+
+    /* .yigou .extendList1 div ul img{
+ text-indent: 3em;
+} */
+
+    .yigou .extendList1 div .ul2 {
+        /* border: 1px solid black; */
+        /* overflow: hidden; */
+        width: 80px;
+        height: 135px;
+        float: left;
+        display: block;
+        border: 1px solid #ddd;
+        border-top: #fff;
+        list-style: none;
+
+        background-color: #fff;
+    }
+
+    .yigou .extendList1 .clear {
+        clear: both;
+    }
+
+    /* .clear{
+    clear: both;
+    border: 1px solid black;
+} */
+    .gap {
+        margin-top: 10px;
+    }
+</style>
+
+<body id="by"> <!-- 导航栏目 -->
+    <div class="topNav">
+        <!-- 中间划分区域，居中 -->
+        <div class="topNavcenter">
+            <!-- 13个div存放每一个a标签内的span和em标签 -->
+            <div class="fa fa-home"><a href="../index.html"><span>返回首页</span></a></div>
+            <div class="webnav">
+                <a href="">
+                    <span>网页导航</span>
+                </a>
+                <!-- 隐藏块 -->
+                <div class="extendList1">
+                    <!-- 头 -->
+                    <div class="border">
+                        <div><span>特色购物</span></div>
+                        <ul>
+                            <li><a href=""><span>苏宁互联</span></a></li>
+                            <li><a href=""><span>苏宁卡</span></a></li>
+                            <li><a href=""><span>易回收</span></a></li>
+                            <li><a href=""><span>领券中心</span></a></li>
+                            <li><a href=""><span>导购指南</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="shangjia">
+                <a href="">
+                    <span>商家入驻</span>
+                </a>
+                <!-- 隐藏块 -->
+                <div class="extendList1">
+                    <!-- 头 -->
+                    <div class="border">
+
+                        <ul>
+                            <li><a href=""><span>合作招商</span></a></li>
+                            <li><a href=""><span>金融中心</span></a></li>
+                            <li><a href=""><span>易通天下</span></a></li>
+                            <li><a href=""><span>服务市场</span></a></li>
+                            <li><a href=""><span>规则中心</span></a></li>
+                            <li><a href=""><span>培训中心</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fuwu"><a href="help.html"><span>客户服务</span></a></div>
+            <div class="login"><a href="login.html"><span>请登录</span></a></div>
+            <div class="register"><a href="register.html"><span>注册有礼</span></a></div>
+            <div class="order">
+                <a href="shopping.html">
+                    <span>我的订单</span>
+                </a>
+                <!-- 隐藏块 -->
+                <div class="extendList1">
+                    <!-- 头 -->
+                    <div class="border">
+
+                        <ul>
+                            <li><a href=""><span>待支付</span></a></li>
+                            <li><a href=""><span>待收货</span></a></li>
+                            <li><a href=""><span>待评价</span></a></li>
+                            <li><a href=""><span>修改订单</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="yigou">
+                <a href="">
+                    <span>我的易购</span>
+                </a>
+                <!-- 隐藏块 -->
+                <div class="extendList1">
+                    <!-- 头 -->
+                    <div class="border">
+
+                        <ul class="ul1">
+                            <li><a href=""><span><img width="40" height="40" src="../images/lion.ico" alt=""></span></a>
+                            </li>
+                            <li><a href=""><span>我的消息</span></a></li>
+                            <li><a href=""><span>我的金融</span></a></li>
+                            <li><a href=""><span>我的任性付</span></a></li>
+
+                        </ul>
+                        <ul class="ul2">
+                            <li><a href="login.html"><span>请登录</span></a></li>
+                            <li class="gap"><a href=""><span>我的关注</span></a></li>
+                            <li><a href=""><span>苏宁会员</span></a></li>
+                            <li><a href=""><span>我的优惠券</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="vip"><a href=""><span>苏宁会员</span></a></div>
+            <div class="fa fa-shopping-cart"><a href="shoppings.html"><span>购物车</span></a></div>
+            <div class="yifubao"><a href=""><span>易付宝</span></a></div>
+            <div class="qiyebuy"><a href=""><span>企业采购</span></a></div>
+            <div class="phonesuning"><a href=""><span>手机苏宁</span></a></div>
+        </div>
+    </div>
+
+    <!-- 头部 -->
+    <div class="header">
+        <div class="pic">
+            <a href="../index.html"></a><img src="../images/suning.png" alt=""></a>
+            <h1>帮助中心</h1>
+        </div>
+    </div>
+
+    <!-- 主体1 -->
+    <div id="body1">
+        <div id="content">
+            <!-- 公告模块 -->
+            <div id="txt">
+                <ul>
+                    <li><a href="#" style="font-size: 18px;font-weight: 600">公告:</a></li>
+                    <li><a href="#">2020新冠疫情期间规则调整通知</a></li>
+                    <li><a href="#">延期发货规则更新至2020.08.09</a></li>
+                    <li><a href="#">2020高考期间发货通知</a></li>
+                    <li><a href="#">更多公告&gt;&gt;</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 搜索框模块 -->
+            <div id="input">
+                <form action="">
+                    <label for="">
+                        <input type="text" name="" id="txt" class="form-control" placeholder="请输入关键词，比如修改订单">
+                        <ul>
+                            <li><a href="#">贵就赔</a></li>
+                            <li><a href="#">发票</a></li>
+                            <li><a href="#">云钻</a></li>
+                        </ul>
+                    </label>
+                    <label for="">
+                        <input type="button" name="" id="bt" value="搜索" class="btn btn-warning">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主体2 -->
+    <div id="body2">
+        <div id="b2header">
+            <h1>自助服务</h1>
+        </div>
+        <div class="b2body">
+            <span>&lt;</span>
+            <div class="bg">
+                <ul id="d1">
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/a.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">我要改单</a>
+                            <a href="">修改配送时间 修改配送地点</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/b.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">贵就陪</a>
+                            <a href="">申请价保补差 价保记录查询</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/c.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">退换货</a>
+                            <a href="">提交退换货申请 查看处理进度</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/d.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">维修保养</a>
+                            <a href="">申请维修保养 查看处理进度</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/e.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">服务收费公示</a>
+                            <a href="">查询各地 售后安装费用</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/f.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">账户安全</a>
+                            <a href="">修改密码绑定手机 提升账户安全性</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/g.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">交易纠纷</a>
+                            <a href="">申请投诉商家 查询投诉记录</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/h.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">我的理赔</a>
+                            <a href="">理赔协议签属及查询</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg">
+                <ul id="d2">
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/i.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">隐私平台</a>
+                            <a href="">最新政策规则查阅 保障用户隐私安全</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/j.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">以旧换新</a>
+                            <a href="">旧机评估报价 回收鉴定获得现金</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/k.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">我的医保卡</a>
+                            <a href="">查看医保卡信息 预约服务</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/l.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">门店顾问</a>
+                            <a href="">门店活动服务 咨询
+
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/m.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">门店订单</a>
+                            <a href="">门店订单查询 操作</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/n.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">我的订单</a>
+                            <a href="">查看物流信息 取消订单</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/o.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">延保服务</a>
+                            <a href="">查看延保产品介绍 购买延保服务</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="leftTxt">
+                            <a href=""><img src="../images/p.png" alt=""></a>
+                        </div>
+                        <div class="rightTxt">
+                            <a href="">我要发票</a>
+                            <a href="">发票补开 增票资质认证</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <span>&gt;</span>
+        </div>
+    </div>
+
+    <!-- 主体3 -->
+    <div id="body3">
+        <div class="bg3">
+            <!-- table头部标题 -->
+            <div class="theader">
+                常见问题
+            </div>
+            <!-- table切换栏主体 -->
+            <div class="tbody">
+                <div class="tcontent">
+                    <!-- 列表栏目 -->
+                    <div class="content1">
+                        <ul>
+                            <li>
+                                <span></span><a href="javascript:void(0);">会员帮助</a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="javascript:void(0);">购物指南</a></li>
+                            <li>
+                                <span></span>
+                                <a href="javascript:void(0);">支付方式</a>
+                            </li>
+                            <li>
+
+                                <span></span><a href="javascript:void(0);">物流配送</a>
+                            </li>
+                            <li>
+
+                                <span></span> <a href="javascript:void(0);">退货换货</a>
+                            </li>
+                            <li>
+                                <span></span><a href="javascript:void(0);">协议规则及公示</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <!-- 第一次 -->
+                        <div class="content2" id="s1">
+                            <div class="leftList">
+                                <ul>
+                                    <li>-SUPER会员说明（2020.01.08）</li>
+                                    <li>-普通会员权益</li>
+                                    <li>- 如何找回登录密码？</li>
+                                    <li>- 会员等级介绍</li>
+                                </ul>
+                            </div>
+                            <div class="leftList">
+                                <ul>
+                                    <li>- SUPER&腾讯视频联合会员权益规则变更公开意见征集</li>
+                                    <li>_门店会员卡和易购账户绑定</li>
+                                    <li>- 如何在苏宁易购网站注册账号</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 第二次 -->
+                        <div class="content2" id="s2">
+                            <div class="leftList">
+                                <ul>
+                                    <li>-苏宁易购云钻规则（2020.04.23）</li>
+                                    <li>-苏宁易购云钻规则（2020.03.01）</li>
+                                    <li>- 什么是购物卷？</li>
+                                    <li>- 什么是预约？</li>
+                                </ul>
+                            </div>
+                            <div class="leftList">
+                                <ul>
+                                    <li>-苏宁易购云钻规则（2020.05.23）</li>
+                                    <li>-苏宁易购云钻规则（2020.06.01）</li>
+                                    <li>-苏宁易购云钻规则（2020.01.18)</li>
+                                    <li>运费卷介绍</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 第三次 -->
+                        <div class="content2" id="s3">
+                            <div class="leftList">
+                                <ul>
+                                    <li>- 支付常见问题</li>
+                                    <li>- 快捷支付说明</li>
+                                    <li>- 易付宝支付服务说明</li>
+                                    <li>- 苏宁门店付款服务说明</li>
+                                </ul>
+                            </div>
+                            <div class="leftList">
+                                <ul>
+                                    <li>-易付宝隐私声明</li>
+                                    <li>-任性付支付服务说明</li>
+                                    <li>-货到付款</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!-- 第四次 -->
+                        <div class="content2" id="s4">
+                            <div class="leftList">
+                                <ul>
+                                    <li>- 苏宁配送说明</li>
+                                    <li>- 配送状态查询</li>
+                                    <li>- 易付宝支付服务说明</li>
+                                    <li>- 半日达服务说明</li>
+                                </ul>
+                            </div>
+                            <div class="leftList">
+                                <ul>
+                                    <li>- 苏宁自营运费政策（2020.02.27）</li>
+                                    <li>- 准时达服务说明</li>
+                                    <li>-中心仓自提业务操作说明</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 第五次 -->
+                        <div class="content2" id="s5">
+                            <div class="leftList">
+                                <ul>
+                                    <li> 苏宁自营商品退换货总则</li>
+                                    <li>- 退款说明</li>
+                                    <li>- 苏宁极物商品售后服务总则</li>
+                                    <li>- 平台退换货纠纷细则</li>
+                                </ul>
+                            </div>
+                            <div class="leftList">
+                                <ul>
+                                    <li>- 七天无理由退货规范</li>
+                                    <li>- 退换货流程</li>
+                                    <li>- 苏宁自营售后运费说明</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!-- 第六次 -->
+                        <div class="content2" id="s6">
+                            <div class="leftList">
+                                <ul>
+                                    <li>-苏宁国际直营商品30天无忧退规则变更公开意见征集</li>
+                                    <li>-《随时会员“优先抢购”权益调整通知》</li>
+                                    <li>- 苏皮士“正品保障”服务承诺</li>
+                                    <li>- 苏皮士“超时赔付”服务规范</li>
+                                </ul>
+                            </div>
+                            <div class="leftList">
+                                <ul>
+                                    <li>-苏宁会员生日红包权益变更的公开征集意见</li>
+                                    <li>- 苏宁易购自提运费收费标准的公示</li>
+                                    <li>- 苏皮士“闪电发货”服务承诺</li>
+                                    <li>- 苏皮士自营商品30天质量无忧退规则</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- table切换栏尾部 -->
+            <div class="tfooter">
+                <a href="">查看更多&gt;&gt;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主体4 -->
+    <div id="body4">
+        <div class="bg4">
+            <!-- table头部标题 -->
+            <div class="fheader">
+                联系我们
+            </div>
+            <!-- 主体部分 -->
+            <div class="fbody">
+                <div id="leftpc">
+                    <div class="ls">
+                        <span class="icon-uniE918"></span><span>在线客服</span>
+                        <p> 在线实时解答问题(8:00-24:00)</p>
+                    </div>
+                    <div class="rs">
+                        <a href="#">立即咨询</a>
+                    </div>
+                </div>
+                <div id="rightpc">
+                    <div class="ls">
+                        <span class="icon-4"></span><span>建议反馈</span>
+                        <p>留言给我们您的建议和意见</p>
+                    </div>
+                    <div class="rs">
+                        <a href="#">留言反馈</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 页面脚部 -->
+        <div class="footer">
+            <ul class="foot1">
+                <li><a href="">苏宁互联</a></li>
+                <li><a href="">苏宁金融</a></li>
+                <li><a href="">苏宁支付</a></li>
+                <li><a href="">PP视频</a></li>
+                <li><a href="">红孩子</a></li>
+                <li><a href="">苏宁物流</a></li>
+                <li><a href="">手机苏宁</a></li>
+                <li><a href="">零售云</a></li>
+                <li><a href="">知识产权举报</a></li>
+                <li><a href="">投资者关系</a></li>
+                <li><a href="">苏宁智能</a></li>
+            </ul>
+
+            <ul class="foot1 foot2">
+                <li><a href="">联系我们</a></li>
+                <li><a href="">诚聘英才</a></li>
+                <li><a href="">合作招商</a></li>
+                <li><a href="">广告平台</a></li>
+                <li><a href="">苏宁联盟</a></li>
+                <li><a href="">苏宁招标</a></li>
+                <li><a href="">隐私政策</a></li>
+                <li><a href="">用户体验提升计划</a></li>
+                <li><a href="">股东会员认证</a></li>
+            </ul>
+
+            <ul class="foot1 foot3 ff">
+                <li><a href="">Copyright© 2002-2020，苏宁易购集团股份有限公司版权所有</a></li>
+                <li id="bg1"></li>
+                <li><a href="">苏公网安备 32010202010078号</a></li>
+                <li><a href=""> 苏ICP备10207551号-4</a></li>
+            </ul>
+
+            <ul class="foot1 foot4 ff">
+                <li><a href="">合字B2-20180025</a></li>
+                <li><a href="">合字A1.B1.B2-20180017 </a></li>
+                <li><a href="">出版物经营许可证新出发苏批字第A-243号</a></li>
+                <li><a href="">互联网药品信息服务资格证书（苏）-非经营性-2016-0005</a></li>
+            </ul>
+
+            <ul class="foot1 foot5 ff">
+                <li><a href="">经营证照</a></li>
+                <li><a href="">网络文化经营许可证：苏网文〔2018〕10580-203号</a></li>
+                <li><a href="">互联网违法和不良信息举报邮箱：kfpt-yy@cnsuning.com</a></li>
+                <li><a href="">举报电话：02566996699-865948</a></li>
+            </ul>
+
+            <p>医疗器械网络交易服务第三方平台备案凭证-（苏）网械平台备字（2018）第00052号</p>
+            <p>本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）</p>
+
+            <ul class="footer2">
+                <li><img src="../images/aa.png" alt=""></li>
+                <li><img src="../images/bb.png" alt=""></li>
+                <li><img src="../images/cc.png" alt=""></li>
+                <li><img src="../images/dd.png" alt=""></li>
+                <li><img id="img1" src="../images/ee.png" alt=""></li>
+            </ul>
+        </div>
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script>
+            //显示隐藏栏目
+            $(() => {
+                $(".b2body span:nth-of-type(1)").click(function () {
+                    $("#d1").css("display", "none")
+                    $("#d2").css("display", "block")
+                })
+                $(".b2body span:nth-of-type(2)").click(function () {
+                    $("#d1").css("display", "block")
+                    $("#d2").css("display", "none")
+                })
+                $("#d2 li").mouseover(function () {
+                    $(this).css("border", "2px solid orange").siblings().css("border", "none")
+                })
+                $("#d2 li").mouseout(function () {
+                    $(this).css("border", "none").siblings().css("border", "none")
+                })
+                $("#d1 li").mouseover(function () {
+                    $(this).css("border", "2px solid orange").siblings().css("border", "none")
+                })
+                $("#d1 li").mouseout(function () {
+                    $(this).css("border", "none").siblings().css("border", "none")
+                })
+            })
+
+            // table切换栏目动画
+            $(() => {
+                $(".content1 ul li").mouseover(function () {
+                    $(this).css("backgroundColor", "#fff")
+                    // console.log($("this").find("span"))
+                    $(this).find("span").addClass("sp")
+                })
+                $(".content1 ul li").mouseout(function () {
+                    $(this).css("backgroundColor", "#e7e7e7")
+                    $(this).find("span").removeClass("sp")
+                })
+
+                for (let i = 0; i < $(".content1 ul li").length; i++) {
+                    $($(".content1 ul li")[i]).click(() => {
+                        $(`#s${i + 1}`).css("display", "block").siblings().css("display", "none")
+
+                    })
+                }
+
+            })
+
+            //导航
+            $(() => {
+                $(".webnav").bind("mouseover", function () {
+                    $(".webnav>.extendList1").show();
+                    $(this).css("backgroundColor", "#fff");
+                    $(this).css({ "border-top": "1px solid #ddd", "border-right": "1px solid #ddd", "border-left": "1px solid #ddd", "border-bottom": "#fff" });
+                    /* $(this).children().css("background-color","white"); */
+                    /* console.log($(this).children()); */
+
+                })
+                $(".webnav").bind("mouseout", function () {
+                    $(".webnav>.extendList1").css("display", "none");
+                    $(this).css("backgroundColor", "#f5f5f5");
+                    $(this).css({ "border-bottom": "#eee", "border-top": "none", "border-right": "none", "border-left": "none" });
+                })
+
+                $(".shangjia").bind("mouseover", function () {
+                    $(".shangjia>.extendList1").show();
+                    $(this).css("backgroundColor", "#fff");
+                    $(this).css({ "border-top": "1px solid #ddd", "border-right": "1px solid #ddd", "border-left": "1px solid #ddd", "border-bottom": "#fff" });
+                    /* $(this).children().css("background-color","white"); */
+                    /* console.log($(this).children()); */
+
+                })
+                $(".shangjia").bind("mouseout", function () {
+                    $(".shangjia>.extendList1").css("display", "none");
+                    $(this).css("backgroundColor", "#f5f5f5");
+                    $(this).css({ "border-bottom": "#eee", "border-top": "none", "border-right": "none", "border-left": "none" });
+                })
+
+                $(".order").bind("mouseover", function () {
+                    $(".order>.extendList1").show();
+                    $(this).css("backgroundColor", "#fff");
+                    $(this).css({ "border-top": "1px solid #ddd", "border-right": "1px solid #ddd", "border-left": "1px solid #ddd", "border-bottom": "#fff" });
+                    /* $(this).children().css("background-color","white"); */
+                    /* console.log($(this).children()); */
+
+                })
+                $(".order").bind("mouseout", function () {
+                    $(".order>.extendList1").css("display", "none");
+                    $(this).css("backgroundColor", "#f5f5f5");
+                    $(this).css({ "border-bottom": "#eee", "border-top": "none", "border-right": "none", "border-left": "none" });
+                })
+
+                $(".yigou").bind("mouseover", function () {
+                    $(".yigou>.extendList1").show();
+                    $(this).css("backgroundColor", "#fff");
+                    $(this).css({ "border-top": "1px solid #ddd", "border-right": "1px solid #ddd", "border-left": "1px solid #ddd", "border-bottom": "#fff" });
+                    $(".yigou>.extendList1 .ul1").css({ "border-top": "1px solid #fff", "border-right": "1px solid #fff", "border-left": "1px solid #ddd", "border-bottom": "#fff" });
+                    $(".yigou>.extendList1 .ul2").css({ "border-top": "1px solid #fff", "border-right": "1px solid #ddd", "border-left": "1px solid #fff", "border-bottom": "#fff" });
+                    /* $(this).children().css("background-color","white"); */
+                    /* console.log($(this).children()); */
+
+                })
+                $(".yigou").bind("mouseout", function () {
+                    $(".yigou>.extendList1").css("display", "none");
+                    $(this).css("backgroundColor", "#f5f5f5");
+                    $(this).css({ "border-bottom": "#eee", "border-top": "none", "border-right": "none", "border-left": "none" });
+                })
+
+            })
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a,ul,li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.login-head{
+    width: 1238px;
+    height: 130px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.login-head>.notice{
+    text-indent: 1em;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color:#333;
+    background:#fefff1;
+    border:1px solid #fecd66;
+    width: 950px;
+    font-size: 15px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 40px;
+    right: 15px;
+}
+.login-head>.notice>a{
+    text-decoration: none;
+    color: red;
+}
+.login-head>.notice>a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.login-head>a>img{
+    width: 250px;
+    height: 130px;
+    /* border: 1px solid red; */
+}
+.login-head>.rightBottom{
+    width: 200px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.login-head>.rightBottom>.fa-pencil-square-o{
+    font-size: 25px;
+}
+.login-head>.rightBottom>span>a{
+    font-family: "微软雅黑";
+    line-height: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.login-head>.rightBottom>span>a:hover{
+    color: red;
+}
+.login-body{
+    /* width: 1600px; */
+    min-width: 1000px;
+    margin: 13px auto 0;
+    height: 712px;
+    background: url(../images/repeat背景.png) repeat;
+    position: relative;
+    /* overflow: hidden; */
+}
+.login-body>.img{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    position: relative;
+}
+.login-body>.img>a>img{
+    /* margin: 0 auto; */
+    /* background-color: black; */
+    position: absolute;
+    top: 0;
+    left: -80px;
+}
+.login-body>.img>.login-main{
+    width: 450px;
+    height: 513px;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 750px;
+}
+.login-body>.img>.login-main>.main-head{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(228, 221, 221);
+}
+.login-body>.img>.login-main>.main-head>.codeLogin{
+    width: 80px;
+    height: 58px;
+    font-size: 20px;
+    color: #f60;
+    border-bottom: 4px solid #f60;
+    /* border: 1px solid red; */
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+.login-body>.img>.login-main>.main-head>.codeLogin:hover{
+    cursor: pointer;
+    color: #f60;
+}
+.login-body>.img>.login-main>.main-head>span{
+    display: block;
+    font-size: 20px;
+    color: rgb(223, 217, 217);
+    position: absolute;
+    top: 17px;
+    left: 224px;
+    font-weight: lighter;
+    user-select: none;
+}
+.login-body>.img>.login-main>.main-head>.userLogin{
+    width: 80px;
+    height: 58px;
+    font-size: 20px;
+    /* border: 1px solid red; */
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 294px;
+}
+.login-body>.img>.login-main>.main-head>.userLogin:hover{
+    cursor: pointer;
+    color: #f60;
+}
+
+
+
+/* 账户登录，一开始隐藏 */
+.login-body>.img>.login-main>.userDv{
+    /* margin-top: 15px; */
+    width: 450px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 63px;
+    display: none;
+}
+
+.login-body>.img>.login-main>.userDv>.num{
+    margin: 35px 20px;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    color: #ccc;
+    font-size: 22px;
+    text-indent: 1em;
+    /* padding-left: 15px; */
+    border: 1px solid #ccc;
+    position: relative;
+}
+.login-body>.img>.login-main>.userDv>.num>.fa-user{
+    /* text-align: left; */
+    /* border: 1px solid red; */
+    /* margin-left: -10px; */
+    position: absolute;
+    left: -5px;
+    top: 15px;
+}
+.login-body>.img>.login-main>.userDv>.num>#num{
+    /* margin-left: 40px; */
+    font-size: 22px;
+    /* color: #c4c4c4d8; */
+    position: absolute;
+    left: 50px;
+    top: 14px;
+    border: none;
+    outline: none;
+
+}
+
+.login-body>.img>.login-main>.userDv>.password{
+    margin: 35px 20px;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    color: #ccc;
+    font-size: 22px;
+    text-indent: 1em;
+    /* padding-left: 15px; */
+    border: 1px solid #ccc;
+    position: relative;
+}
+.login-body>.img>.login-main>.userDv>.password>.fa-lock{
+    /* text-align: left; */
+    /* border: 1px solid red; */
+    /* margin-left: -10px; */
+    position: absolute;
+    left: -5px;
+    top: 15px;
+}
+.login-body>.img>.login-main>.userDv>.password>#passwords{
+    /* margin-left: 40px; */
+    font-size: 22px;
+    /* color: #c4c4c4d8; */
+    position: absolute;
+    left: 50px;
+    top: 14px;
+    border: none;
+    outline: none;
+
+}
+.login-body>.img>.login-main>.userDv>.anotherWays{
+    width: 90%;
+    height: 0;
+    margin: 40px auto;
+    /* border: 1px solid red; */
+}
+.login-body>.img>.login-main>.userDv>.anotherWays>span{
+    font-size: 15px;
+}
+.login-body>.img>.login-main>.userDv>.anotherWays>.fa-mobile{
+    font-size: 24px;
+}
+.login-body>.img>.login-main>.userDv>.anotherWays>div{
+    margin-top: 5px;
+    float: right;
+    font-size: 15px;
+}
+.login-body>.img>.login-main>.userDv>.anotherWays>span>a:hover{
+    cursor: pointer;
+    color: #f60;
+}
+.login-body>.img>.login-main>.userDv>.anotherWays>div>a:hover{
+    cursor: pointer;
+    color: #f60;
+    text-decoration: underline;
+}
+.login-body>.img>.login-main>.userDv>.over{
+    text-align: center;
+    line-height: 45px;
+    font-size: 25px;
+    color: white;
+    background-color: #f60;
+    font-weight: bolder;
+    margin:-7px auto;
+    width: 78%;
+    height: 45px;
+    /* border: 1px solid red; */
+}
+.login-body>.img>.login-main>.userDv>.over:hover{
+    background-color: #dd5800;
+    cursor: pointer;
+}
+
+
+.login-body>.img>.login-main>.qrCode{
+    width: 100%;
+    height: 270px;
+    /* border: 1px solid black; */
+    position: relative;
+}
+.login-body>.img>.login-main>.qrCode>img{
+    position: absolute;
+    top: 60px;
+    left: 135px;
+}
+.login-body>.img>.login-main>.text{
+    margin: 0 auto;
+    width: 80%;
+    height: 105px;
+    border-bottom: 1px solid #ccc;
+}
+.login-body>.img>.login-main>.text>p{
+   
+    text-align: center;
+}
+.login-body>.img>.login-main>.text>p>span>.color>a{
+    text-decoration: none;
+    font-size: bolder;
+    color: #f60;
+}
+.login-body>.img>.login-main>.text>p>.color>a{
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: bolder;
+    color: #f60;
+}
+.login-body>.img>.login-main>.loginType>span{
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    /* border: 1px solid red; */
+    background-color: white;
+    color: #999;
+    position: absolute;
+    top: 420px;
+    left: 142px;
+}
+.login-body>.img>.login-main>.pic{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    
+    position: absolute;
+    top: 455px;
+
+}
+.login-body>.img>.login-main>.pic>span{
+    color: #ccc;
+    /* border: 1px solid red; */
+    
+}
+
+.login-body>.img>.login-main>.pic>a{
+
+    text-decoration: none;
+}
+
+
+
+/* .login-foot{
+    width: 100%;
+    height: 170px;
+} */
+.login-foot{
+    margin-top: 10px;
+    height:180px;
+    z-index: 50;
+}
+.login-foot>.foot-box{
+    width: 1140px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.login-foot>.foot-box>.foot-list{
+    color: #ccc;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.login-foot>.foot-box>.foot-list>a{
+    text-decoration: none;
+    color: #666666;
+}
+.login-foot>.foot-box>.foot-list2{
+    color: #999;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.login-foot>.foot-box>.foot-list2>a{
+    text-decoration: none;
+    color: #999;
+}
+.login-foot>.foot-box>.img{
+    width: 350px;
+    /* border: 1px solid red; */
+    margin: 15px auto;
+}
+.login-foot>.foot-box>.img>img{
+    /* border: 1px solid red; */
+    display: inline-block;
+   
+}
+.login-foot>.foot-box>.img>.foot-zhizhao{
+    width: 24px;
+    height: 24px;
+}
